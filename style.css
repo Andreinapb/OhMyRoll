@@ -1,0 +1,174 @@
+/* Paleta de colores*/
+/* Style Menu Pc*/
+#barranav1 {
+  height: 80px;
+  background-color: white;
+}
+
+#barranav1 .nav1:hover {
+  color: grey;
+  font-size: 23px;
+}
+
+#barranav1 .nav1 {
+  color: #A84144;
+  text-decoration: none;
+  font-size: 20px;
+  font-style: bold;
+}
+
+#barranav1 .icono {
+  float: right;
+  padding: 5px;
+}
+
+.icono:hover {
+  height: 60px;
+  width: 60px;
+}
+
+.icono {
+  height: 30px;
+  width: 30px;
+}
+
+#nosotros {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50%;
+      grid-template-columns: 50%;
+  height: 700px;
+  background-image: url(img/nosotros1.jpg);
+  padding: 30px;
+}
+
+#nosotros #historia {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 30px;
+  height: 500px;
+  background-color: grey;
+  opacity: 0.7;
+}
+
+#nosotros #historia h4 {
+  color: #A84144;
+  font-style: italic;
+  padding: 10px;
+  font-size: 50px;
+  text-align: center;
+}
+
+#nosotros #historia p {
+  color: white;
+  font-size: 20px;
+  text-align: justify;
+}
+
+#productos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  height: 700px;
+  background-image: url(img/img22.jpg);
+  padding: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#productos .producto {
+  background-color: grey;
+  margin: 5px;
+  height: 550px;
+  opacity: 0.8;
+  padding: 10px;
+}
+
+#productos .producto h2 {
+  color: #A84144;
+  text-align: center;
+}
+
+#productos .producto p {
+  color: white;
+  text-align: justify;
+  font-size: 20px;
+}
+
+#pedir {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3 33%;
+      grid-template-rows: 3 33%;
+  height: 700px;
+  background-image: url(img/img5.jpg);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#pedir .paso {
+  float: left;
+  width: 33%;
+  height: 70%;
+  padding: 5px;
+}
+
+#pedir .paso .card {
+  background-color: #A84144;
+  opacity: 0.8;
+}
+
+#pedir .paso .card-img {
+  height: 100%;
+}
+
+#pedir .card-body {
+  background-color: grey;
+  color: white;
+  height: 250px;
+}
+
+#pedir #accion {
+  color: #A84144;
+  font-style: bold;
+  font-size: 20px;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+  height: 200px;
+  width: 100%;
+  background-color: #A84144;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#footer .elemento {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#preguntas {
+  height: 700px;
+  background-color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=style.css.map */
