@@ -7,7 +7,6 @@ $color4: grey;
 
 /* Style Menu Pc*/
 #barranav1 {
-
     height: 80px;
     background-color: $color2;
 
@@ -17,6 +16,7 @@ $color4: grey;
     }
 
     .nav1 {
+        display: flex;
         color: $color1;
         text-decoration: none;
         font-size: 20px;
@@ -38,21 +38,18 @@ $color4: grey;
 .icono {
     height: 30px;
     width: 30px;
-
 }
 
-
 #nosotros {
-    display: grid;
-    grid-template-columns: 50%;
-    height: 700px;
     background-image: url(img/nosotros1.jpg);
+    display: flex;
     padding: 30px;
+    height: 700px;
 
     #historia {
-        align-content: center;
         padding: 30px;
-        height: 500px;
+        width: 50%;
+        height: 80%;
         background-color: $color4;
         opacity: 0.7;
 
@@ -72,20 +69,20 @@ $color4: grey;
     }
 }
 
-
 #productos {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     height: 700px;
     background-image: url(img/img22.jpg);
     padding: 10px;
-    align-items: center;
+
 
 
     .producto {
         background-color: $color4;
+        width: 24%;
         margin: 5px;
-        height: 550px;
         opacity: 0.8;
         padding: 10px;
 
@@ -100,6 +97,20 @@ $color4: grey;
             text-align: justify;
             font-size: 20px;
         }
+
+    }
+
+    #mas {
+        font-size: 30px;
+        width: 30%;
+        text-align: center;
+
+        .mas {
+            color: $color1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
     }
 }
 
@@ -107,21 +118,19 @@ $color4: grey;
 
 
 #pedir {
-    display: grid;
-    grid-template-rows: 3(33%);
-    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 400px;
     background-image: url(img/img5.jpg);
     align-items: center;
 
     .paso {
-
         float: left;
         width: 33%;
-        height: 70%;
         padding: 5px;
 
         .card {
-
             background-color: $color1;
             opacity: 0.8;
         }
@@ -135,43 +144,48 @@ $color4: grey;
     .card-body {
         background-color: $color4;
         color: $color2;
-        height: 250px;
     }
-#accion {
-    color: $color1;
-    font-style: bold;
-    font-size: 20px;
-} 
+
+        }
+
+        
+    #pide {
+        font-size: 30px;
+        text-align: center;
+
+        .pide {
+            color: $color1;
+            text-decoration: none;
+            font-weight: bold;
+    }
+    
 }
 
+#footer {
+    display: flex;
+    justify-content: center;
+    background-color: $color1;
+    justify-content: space-evenly;
+    font-size: 20px;
 
+    .elemento {
+        color: $color2;
+        font-style: bold;
+        font-size: 20px;
+        text-decoration: none;
+    }
+}
 
+#preguntas {
+    background-color: $color2;
+    justify-content: space-between;
+
+}
 
 .parallax {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-#footer {
-    display: flex;
-    grid-template-rows: 50% 50%;
-    height: 200px;
-    width: 100%;
-    background-color: $color1;
-    justify-content: space-evenly;
-
-    .elemento {
-        color:$color2;
-        text-decoration: none;
-        font-size: 20px;
-    }
-}
-
-#preguntas {
-    height: 700px;
-background-color: $color2;
-justify-content: space-between;
-
+    opacity: 0.9;
 }
