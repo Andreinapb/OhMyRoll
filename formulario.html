@@ -14,42 +14,47 @@
     <title>OH MY ROLL</title>
 </head>
 
+
+
 <body>
     <header>
         <section>
             <div class="container-fluid">
                 <!-- aqui empiza mi menu de pc-->
-                
-                <div id="barranav1" class="container-fluid">
 
-                    <ul class="nav justify-content-end">
+                <div id="barra">
+
+                    <ul class="nav">
                         <li> <a class="navbar-brand" href="index.html">
-                            <img src="img/logo.jpg" width="50" height="50" alt="" loading="lazy">
-                          </a></li>
+                                <img class="icono2" src="img/logo.jpg" loading="lazy">
+                            </a></li>
                         <li class="elemento nav-item">
-                            <a class="nav1 nav-link" href="index.html#nosotros">Nosotros</a>
+                            <a class="tm nav-link" href="index.html#nosotros">Nosotros</a>
                         </li>
                         <li class="elemento nav-item">
-                            <a class="nav1 nav-link" href="index.html#productos">Nuestros Productos</a>
+                            <a class="tm nav-link" href="index.html#producto">Nuestros Productos</a>
                         </li>
                         <li class="elemento nav-item">
-                            <a class="nav1 nav-link" href=index.html#pedir>¿Cómo pedir?</a>
+                            <a class="tm nav-link" href="index.html#pedir">¿Cómo pedir?</a>
                         </li>
                         <li class="elemento nav-item">
-                            <a class="nav1 nav-link" href="preguntas.html">Preguntas Frecuentes</a>
+                            <a class="tm nav-link" href="preguntas.html">Preguntas Frecuentes</a>
                         </li>
                         <li class="elemento nav-item">
-                            <a class="nav1 nav-link" href="formulario.html">¡Haz tu pedido!</a>
+                            <a class="tm nav-link" href="formulario.html">¡Haz tu pedido!</a>
                         </li>
                         <li class="elemento nav-item">
-                            <a class="nav1 nav-link" href="index.html#contacto">Contactanos</a>
+                            <a class="tm nav-link" href="index.html">Contactanos</a>
+                        </li>
+                        <li class="elemento nav-item">
+                            <a class="tm nav-link" href="galeria.html">Galeria</a>
                         </li>
                     </ul>
                 </div>
                 <!-- aqui termina mi menu de pc-->
 
-                <!-- aqui empieza mi menu de mobile
-                <div id="barranav2">
+                <!-- aqui empieza mi menu de mobile-->
+                <div id="barra2">
 
                     <div class="collapse" id="navbarToggleExternalContent">
 
@@ -57,22 +62,25 @@
 
                             <ul class="nav flex-column">
                                 <li class="elemento nav-item">
-                                    <a class="nav1 nav-link" href="#nosotros">Nosotros</a>
+                                    <a class="tm nav-link" href="#nosotros">Nosotros</a>
                                 </li>
                                 <li class="elemento nav-item">
-                                    <a class="nav1 nav-link" href="#productos">Nuestros Productos</a>
+                                    <a class="tm nav-link" href="producto.html">Nuestros Productos</a>
                                 </li>
                                 <li class="elemento nav-item">
-                                    <a class="nav1 nav-link" href="#pedir">¿Cómo pedir?</a>
+                                    <a class="tm nav-link" href="index.html#pedir">¿Cómo pedir?</a>
                                 </li>
                                 <li class="elemento nav-item">
-                                    <a class="nav1 nav-link" href="preguntas.html">Preguntas Frecuentes</a>
+                                    <a class="tm nav-link" href="preguntas.html">Preguntas Frecuentes</a>
                                 </li>
                                 <li class="elemento nav-item">
-                                    <a class="nav1 nav-link" href="formulario.html">¡Haz tu pedido!</a>
+                                    <a class="tm nav-link" href="formulario.html">¡Haz tu pedido!</a>
                                 </li>
                                 <li class="elemento nav-item">
-                                    <a class="nav1 nav-link" href="#footer">Contactanos</a>
+                                    <a class="tm nav-link" href="index.html#footer">Contactanos</a>
+                                </li>
+                                <li class="elemento nav-item">
+                                    <a class="tm nav-link" href="galeria.html">Galeria</a>
                                 </li>
                             </ul>
 
@@ -83,9 +91,7 @@
                     <nav class="navbar navbar-light">
 
                         <div id="redes">
-                            <a href=""><img src="img/instagram.png" class="icono" alt=""></a>
-                            <a href=""><img src="img/whatsapp.png" class="icono" alt=""></a>
-                            <a href=""><img src="img/logo.jpg" id="logo" alt=""></a>
+                            <a href=""><img src="img/logo.jpg" class="icono2"></a>
                         </div>
 
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -98,101 +104,117 @@
 
                 </div>
 
-                 aqui termina mi menu mobile-->
-
+                <!--aqui termina mi menu mobile-->
             </div>
             </div>
         </section>
     </header>
 
-    <form>
-        <form>
+    <section id="formulario" class="container-fluid">
+        <div>
+            <form action="contact.php" method="post">
 
-            <div class="form-group">
-              <label for="exampleFormControlInput1">Nombre y Apellido</label>
-              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Andreina Parra">
-            </div>
+                <h1 class="t1"> Completa el formulario y haz tu pedido</h1>
 
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Telefono</label>
-                <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="9 11 26300356">
-              </div>
+                <div id="datos">
 
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Selecciona tu bandeja</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>Bandeja de 4 Rolls</option>
-                <option>Bandeja de 6 Rolls</option>
-                <option>Bandeja de 8 Rolls</option>
-                <option>Bandeja de 12 Rolls</option>
-                <option>Mas de una bandeja</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Elegiste mas de una bandeja, escribe por favor tus opciones</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-          </form>
-            </div>
-        </fieldset>
-        <div class="form-group row">
-            <div class="col-sm-2">Elige un medio de pago</div>
-            <div class="col-sm-10">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck1">
-                    <label class="form-check-label" for="gridCheck1">
-                        Efectivo
-                    </label>
+                    <label for="nombre" class="">Nombre:</label>
+                    <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" required="" />
                     <br>
-                    <input class="form-check-input" type="checkbox" id="gridCheck2">
-                    <label class="form-check-label" for="gridCheck2">
-                    transferencia bancaria 
-                    </label>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
+                    <br>
+                    <label for="telefono"> telefono:</label>
+                    <input id="telefono" type="text" name="ntelefono" placeholder="11 263 00 356" required="" />
+                    <br>
                 </div>
-            </div>
-        </div>
-        <div class="form-group row">
-            <div class="col-sm-10">
-                <button type="submit" class="btn btn-primary">Sign in</button>
-            </div>
-        </div>
-    </form>
 
-    </header>
+                <h2 class="tf">Elija su bandeja:</h2>
+                <div id="bandeja">
+                    <input type="checkbox" name="bandja-4" value="bandeja"> bandeja de 4 con crema $xxx<br>
+                    <input type="checkbox" name="bandja-6" value="bandeja"> bandeja de 6 con crema $xxx <br>
+                    <input type="checkbox" name="bandja-8" value="bandeja"> bandeja de 8 con crema $xxx <br>
+                    <input type="checkbox" name="bandja-12" value="bandeja"> bandeja de 12 con crema $xxx <br>
+                </div>
+
+                <div id="pago">
+                    <h2 class="tf">Elija su metodo de pago</h2>
+                    <input type="radio" name="pago" value="1"> Desposito bancario
+
+                    <input type="radio" name="pago" value="2"> Efectivo al momento de la entrega
+
+                    <input type="radio" name="pago" value="3"> Consignacion
+                </div>
+
+                <div id="direccion">
+                    <p class="tf">Digamos su direccion</p>
+                    <label for="calle">Calle:</label>
+                    <input id="calle" type="text" name="calle" placeholder="Indique su calle" required="" />
+
+                    <label for="altura"> Altura:</label>
+                    <input id="altura" type="" name="altura" placeholder="indique su altura" required="" />
+
+                    <label for="zona"> Zona:</label>
+                    <input id="zona" type="text" name="zona" placeholder="Indique su zona" required="" />
+
+                </div>
+
+                <div id="mensaje">
+                    <p class="tf">Quiere decirnos algo?</p>
+                    <label for="mensaje" class=""></label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Deje su mensaje aqui" required="" cols="60"
+                        rows="5"></textarea>
+                </div>
+                <div id="botones">
+                    <input id="submit" type="submit" name="submit" value="Enviar" />
+                    <input id="submit" type="reset" name="submit" value="Limpiar" />
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <!-- aqui empieza seccion el footer-->
+
     <footer>
+        <section id="footer" class="fondo2 container-fluid">
 
-        <section id="footer" class="container-fluid">
-    
-            <div id="redes" class="elemento container">
-                <h2>Siguenos</h2>
-                <a href="" class="elemento" ><img src="img/instagram.png" class="icono" alt="">@ohmyroll</a>
-                <a href=""class="elemento"><img src="img/whatsapp.png" class="icono" alt="" > 54 11 263 00 356</a>
+            <div class="elemento">
+                <h2 class="t2">Siguenos</h2>
+                <a href="" class="link2"><img src="img/instagram.png" class="icono1">@ohmyroll</a>
+
             </div>
-    
-            <div id="contacto" class="elemento container">
-    
-                <h2>Contactanos</h2>
-                <p><img src="img/telefono.png" alt="" class="icono"> 54 9 11 263 00 356</p>
+
+            <div class="elemento">
+
+                <h2 class="t2">Contactanos</h2>
+                <a href="" class="link2"><img src="img/whatsapp.png" class="icono1"> 54 11 263 00 356</a>
             </div>
-    
-            <div id="contacto" class="elemento container">
-    
-                <h2>Preguntas Frecuentes</h2>
-                <p><img src="img/ayuda.png" alt="" class="icono"> <a href="preguntas.html" class="elemento">Consulta tus dudas!</a></p>
+
+            <div class="elemento">
+
+                <h2 class="t2">Preguntas Frecuentes</h2>
+                <p><img src="img/ayuda.png" class="icono1"> <a href="preguntas.html" class="link2">Consulta
+                        tus dudas!</a></p>
             </div>
-    
+
         </section>
     </footer>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-            integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
-        </script>
-        </footer>
-    </body>
-    
-    </html>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
+
+
+
+</body>
+
+</html>

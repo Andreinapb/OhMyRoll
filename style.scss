@@ -27,7 +27,6 @@ $color4: grey;
     background-color: $color1;
     opacity: 0.9;
     padding: 30px;
-    margin: 10px;
 }
 
 /*titulos*/
@@ -47,6 +46,15 @@ $color4: grey;
     font-size: 40px;
     text-align: center;
     font-style: bolder;
+}
+
+.tf {
+    color: $color1;
+    font-family: fuente4, serif;
+    font-size: 20px;
+    text-align: center;
+    font-style: bolder;
+
 }
 
 /*parrafos*/
@@ -107,7 +115,6 @@ $color4: grey;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 5px;
 }
 
 
@@ -139,7 +146,7 @@ $color4: grey;
 
 #barra {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 100%;
 
 
@@ -148,15 +155,13 @@ $color4: grey;
     }
 }
 
-
-
 /*body index*/
 #nosotros {
-   display: flex;
+    display: flex;
     background-image: url(img/nosotros1.jpg);
     padding: 20px;
     width: 100%;
-    height:600px;
+    height: 600px;
 
     #historia {
         width: 50%;
@@ -191,11 +196,12 @@ $color4: grey;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 10px;
+        padding: 10px;
 
         .paso {
             width: 30%;
             margin: 10px;
+            padding: 5px;
             justify-content: center;
 
             .card-img {
@@ -204,6 +210,38 @@ $color4: grey;
         }
     }
 }
+
+
+/*body formilario*/
+
+#formulario {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
+    height: auto;
+    width: 65%;
+    color: $color4;
+    font-weight: bolder;
+    font-family: fuente3;
+    font-size: 20px;
+    text-align: center;
+    border: solid 3px $color1;
+    padding: 5px;
+    margin-bottom: 30px;
+    background-image: url(img/img22.jpg);
+    opacity: 0.7;
+
+    #submit {
+    background-color: $color1;
+    font-family: fuente3;
+    color: $color2;
+        height: 35px;
+        border: none;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}
+
 
 /*footer*/
 #footer {
@@ -216,7 +254,7 @@ $color4: grey;
 
 @media (min-width: 320px) and (max-width: 767px) {
 
-    #barra{
+    #barra {
         display: none;
     }
 
@@ -273,11 +311,18 @@ $color4: grey;
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
+    #formulario {
+
+        display: flex;
+flex-wrap: nowrap;
+        #mensaje {display: none;}
+    }
 }
 
 @media (min-width: 767px) and (max-width: 1024px) {
 
-    #barra1{
+    #barra1 {
         display: none;
     }
 
@@ -302,7 +347,8 @@ $color4: grey;
         .producto {
             width: 45%;
         }
-}  
+    }
+
     #pedir {
         width: 100%;
         height: auto;
@@ -323,6 +369,8 @@ $color4: grey;
         }
     }
 
+
+
     #footer {
         display: flex;
         flex-wrap: wrap;
@@ -331,7 +379,7 @@ $color4: grey;
 }
 
 
-@media (min-width: 767px) {
+@media (min-width: 1024px) {
 
     #barra2 {
         display: none;
