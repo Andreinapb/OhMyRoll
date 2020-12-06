@@ -1,191 +1,339 @@
+/*Fuentes*/
+
+@font-face {
+    font-family: fuente3;
+    src: url(fonts/fuente3.ttf);
+}
+
+@font-face {
+    font-family: fuente4;
+    src: url(fonts/fuente4.ttf);
+}
+
 /* Paleta de colores*/
 $color1:#A84144;
 $color2: white;
 $color3: black;
 $color4: grey;
 
-
-/* Style Menu Pc*/
-#barranav1 {
-    height: 80px;
-    background-color: $color2;
-
-    .nav1:hover {
-        color: $color4;
-        font-size: 23px;
-    }
-
-    .nav1 {
-        display: flex;
-        color: $color1;
-        text-decoration: none;
-        font-size: 20px;
-        font-style: bold;
-    }
-
-    .icono {
-        float: right;
-        padding: 5px;
-    }
+.fondo1 {
+    background-color: $color4;
+    opacity: 0.9;
+    padding: 30px;
+    margin: 10px;
 }
 
-.icono:hover {
-
-    height: 60px;
-    width: 60px;
+.fondo2 {
+    background-color: $color1;
+    opacity: 0.9;
+    padding: 30px;
+    margin: 10px;
 }
 
-.icono {
+/*titulos*/
+.t1 {
+    color: $color1;
+    font-style: italic;
+    font-family: fuente4, serif;
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    font-style: bolder;
+}
+
+.t2 {
+    color: $color2;
+    font-family: fuente4, serif;
+    font-size: 40px;
+    text-align: center;
+    font-style: bolder;
+}
+
+/*parrafos*/
+.p1 {
+    font-family: fuente3, serif;
+    color: $color2;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.p2 {
+    font-family: fuente3, serif;
+    color: $color2;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+/*iconos*/
+
+.icono1 {
+    padding: 5px;
     height: 30px;
     width: 30px;
 }
 
-#nosotros {
-    background-image: url(img/nosotros1.jpg);
-    display: flex;
-    padding: 30px;
-    height: 700px;
-
-    #historia {
-        padding: 30px;
-        width: 50%;
-        height: 80%;
-        background-color: $color4;
-        opacity: 0.7;
-
-        h4 {
-            color: $color1;
-            font-style: italic;
-            padding: 10px;
-            font-size: 50px;
-            text-align: center;
-        }
-
-        p {
-            color: $color2;
-            font-size: 20px;
-            text-align: justify;
-        }
-    }
+.icono2 {
+    padding: 5px;
+    height: 70px;
+    width: 70px;
+    border-radius: 40px;
 }
 
-#productos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 700px;
-    background-image: url(img/img22.jpg);
-    padding: 10px;
+/*link*/
 
-
-
-    .producto {
-        background-color: $color4;
-        width: 24%;
-        margin: 5px;
-        opacity: 0.8;
-        padding: 10px;
-
-        h2 {
-            color: $color1;
-            text-align: center;
-
-        }
-
-        p {
-            color: $color2;
-            text-align: justify;
-            font-size: 20px;
-        }
-
-    }
-
-    #mas {
-        font-size: 30px;
-        width: 30%;
-        text-align: center;
-
-        .mas {
-            color: $color1;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-    }
+.link1 {
+    color: $color1;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    font-family: fuente1;
 }
 
-
-
-
-#pedir {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 400px;
-    background-image: url(img/img5.jpg);
-    align-items: center;
-
-    .paso {
-        float: left;
-        width: 33%;
-        padding: 5px;
-
-        .card {
-            background-color: $color1;
-            opacity: 0.8;
-        }
-
-        .card-img {
-            height: 100%;
-        }
-
-    }
-
-    .card-body {
-        background-color: $color4;
-        color: $color2;
-    }
-
-        }
-
-        
-    #pide {
-        font-size: 30px;
-        text-align: center;
-
-        .pide {
-            color: $color1;
-            text-decoration: none;
-            font-weight: bold;
-    }
-    
-}
-
-#footer {
-    display: flex;
-    justify-content: center;
-    background-color: $color1;
-    justify-content: space-evenly;
+.link2 {
+    color: $color2;
+    text-decoration: none;
+    text-align: center;
     font-size: 20px;
-
-    .elemento {
-        color: $color2;
-        font-style: bold;
-        font-size: 20px;
-        text-decoration: none;
-    }
+    font-family: fuente1;
 }
 
-#preguntas {
-    background-color: $color2;
-    justify-content: space-between;
 
-}
+/*efectos*/
 
 .parallax {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.9;
+    margin: 5px;
+}
+
+
+.link1:hover {
+    text-decoration: none;
+    color: $color2;
+}
+
+.tm:hover {
+    text-decoration: none;
+    color: $color1;
+    font-size: 25px;
+}
+
+.link2:hover {
+    text-decoration: none;
+    color: $color2;
+    font-size: 30px;
+}
+
+/*barra de navegacion*/
+
+.tm {
+    color: $color1;
+    font-size: 20px;
+    font-family: fuente4;
+    font-style: bolder;
+}
+
+#barra {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+    .nav {
+        margin-top: 15px;
+    }
+}
+
+
+
+/*body index*/
+#nosotros {
+   display: flex;
+    background-image: url(img/nosotros1.jpg);
+    padding: 20px;
+    width: 100%;
+    height:600px;
+
+    #historia {
+        width: 50%;
+        height: 80%;
+    }
+}
+
+#producto {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(img/img22.jpg);
+    height: 700px;
+    padding: 20px;
+    justify-content: center;
+
+    .descripcion {
+        width: 100%;
+    }
+
+    .producto {
+        width: 23%;
+    }
+
+}
+
+#pedir {
+    background-image: url(img/img18.jpg);
+    width: 100%;
+    height: 500px;
+
+    #pasos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px;
+
+        .paso {
+            width: 30%;
+            margin: 10px;
+            justify-content: center;
+
+            .card-img {
+                height: 100%;
+            }
+        }
+    }
+}
+
+/*footer*/
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* media query*/
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    #barra{
+        display: none;
+    }
+
+
+    #nosotros {
+        display: flex;
+        background-image: url(img/nosotros1.jpg);
+        height: 100%;
+        padding: 20px;
+
+        #historia {
+
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+
+    #producto {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 5px;
+
+        .descripcion {
+            width: 100%;
+        }
+
+        .producto {
+            width: 100%;
+        }
+    }
+
+    #pedir {
+        width: 100%;
+        height: auto;
+
+        #pasos {
+            display: flex;
+            flex-wrap: wrap;
+
+            .paso {
+                width: 100%;
+            }
+        }
+
+        .card-img {
+            display: none;
+        }
+    }
+
+    #footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+
+    #barra1{
+        display: none;
+    }
+
+
+    #nosotros {
+        display: flex;
+        height: 100%;
+        padding: 20px;
+    }
+
+
+    #producto {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 5px;
+
+        .descripcion {
+            width: 100%;
+        }
+
+        .producto {
+            width: 45%;
+        }
+}  
+    #pedir {
+        width: 100%;
+        height: auto;
+
+        #pasos {
+            display: flex;
+            flex-wrap: wrap;
+
+            .paso {
+                width: 100%;
+            }
+        }
+
+        .card-img {
+            height: 200px;
+            width: 200px;
+            justify-self: center;
+        }
+    }
+
+    #footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width: 767px) {
+
+    #barra2 {
+        display: none;
+    }
 }
