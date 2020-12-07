@@ -135,6 +135,9 @@ $color4: grey;
     font-size: 30px;
 }
 
+/*imagenes*/
+
+
 /*barra de navegacion*/
 
 .tm {
@@ -211,8 +214,25 @@ $color4: grey;
     }
 }
 
+/*body productos*/
+#carta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-/*body formilario*/
+
+    .carta {
+        width: 40%;
+        height: 450px;
+        margin: 20px;
+    }
+
+    .card-img {
+        height: 100%;
+    }
+}
+
+/*body formulario*/
 
 #formulario {
     display: grid;
@@ -232,9 +252,9 @@ $color4: grey;
     opacity: 0.7;
 
     #submit {
-    background-color: $color1;
-    font-family: fuente3;
-    color: $color2;
+        background-color: $color1;
+        font-family: fuente3;
+        color: $color2;
         height: 35px;
         border: none;
         margin-top: 20px;
@@ -310,14 +330,34 @@ $color4: grey;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        
+
+    }
+
+    #carta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    
+        .carta {
+            width: auto;
+            height: auto;
+            margin: 20px;
+        }
+    
+        .card-img {
+            height: auto;
+        }
     }
 
     #formulario {
 
         display: flex;
-flex-wrap: nowrap;
-        #mensaje {display: none;}
+        flex-wrap: nowrap;
+
+        #mensaje {
+            display: none;
+        }
     }
 }
 

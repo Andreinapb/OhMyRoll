@@ -122,6 +122,7 @@
   font-size: 30px;
 }
 
+/*imagenes*/
 /*barra de navegacion*/
 .tm {
   color: #A84144;
@@ -212,7 +213,29 @@
   height: 100%;
 }
 
-/*body formilario*/
+/*body productos*/
+#carta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#carta .carta {
+  width: 40%;
+  height: 450px;
+  margin: 20px;
+}
+
+#carta .card-img {
+  height: 100%;
+}
+
+/*body formulario*/
 #formulario {
   display: -ms-grid;
   display: grid;
@@ -314,6 +337,24 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  #carta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #carta .carta {
+    width: auto;
+    height: auto;
+    margin: 20px;
+  }
+  #carta .card-img {
+    height: auto;
   }
   #formulario {
     display: -webkit-box;
