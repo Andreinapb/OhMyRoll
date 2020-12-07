@@ -108,8 +108,9 @@
   text-decoration: none;
   font-weight: bold;
   text-align: center;
-  font-size: 50px;
-  font-family: fuente1;
+  font-size: 30px;
+  font-family: fuente1, serif;
+  text-transform: uppercase;
 }
 
 .link2 {
@@ -117,7 +118,7 @@
   text-decoration: none;
   text-align: justify;
   font-size: 20px;
-  font-family: fuente3;
+  font-family: fuente3, serif;
 }
 
 /*efectos*/
@@ -190,6 +191,9 @@
   background-image: url(img/img22.jpg);
   height: 700px;
   padding: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #producto .descripcion {
@@ -314,11 +318,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+#footer .elemento {
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 /* media query*/
