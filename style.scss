@@ -356,12 +356,25 @@ $color4: grey;
         }
     }
 
-    #footer {
+  
+
+    #recomendaciones {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        padding-bottom:5px ;
+        height: 100%;
+        justify-content: center;
+    
+        .imagen {
+            width: 100%;
+        }
+    
+        .recomendacion {
+            padding-top: 50px;
+            width: 100%;
 
-    }
+        }
+}
 
     #carta {
         display: flex;
@@ -389,6 +402,13 @@ $color4: grey;
             display: none;
         }
     }
+}
+
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
 @media (min-width: 767px) and (max-width: 1024px) {

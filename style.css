@@ -363,15 +363,24 @@
   #pedir .card-img {
     display: none;
   }
-  #footer {
+  #recomendaciones {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    padding-bottom: 5px;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #recomendaciones .imagen {
+    width: 100%;
+  }
+  #recomendaciones .recomendacion {
+    padding-top: 50px;
+    width: 100%;
   }
   #carta {
     display: -webkit-box;
@@ -401,6 +410,17 @@
   #formulario #mensaje {
     display: none;
   }
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (min-width: 767px) and (max-width: 1024px) {
