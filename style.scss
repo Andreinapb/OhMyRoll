@@ -72,6 +72,13 @@ $color4: grey;
     text-align: justify;
 }
 
+.p3 {
+    font-family: fuente4, serif;
+    color: $color2;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;;
+}
 
 /*iconos*/
 
@@ -82,7 +89,6 @@ $color4: grey;
 }
 
 .icono2 {
-    padding: 5px;
     height: 70px;
     width: 70px;
     border-radius: 40px;
@@ -136,7 +142,11 @@ $color4: grey;
 }
 
 /*imagenes*/
+.img1 {
 
+    height:100%;
+    width: 100%;
+}
 
 /*barra de navegacion*/
 
@@ -230,6 +240,26 @@ $color4: grey;
     .card-img {
         height: 100%;
     }
+}
+
+/*body recomendaciones*/
+
+#recomendaciones {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom:20px ;
+        height: 100%;
+        justify-content: center;
+    
+        .imagen {
+            width: 50%;
+        }
+    
+        .recomendacion {
+            padding-top: 100px;
+            width: 50%;
+
+        }
 }
 
 /*body formulario*/
@@ -337,14 +367,14 @@ $color4: grey;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    
-    
+
+
         .carta {
             width: auto;
             height: auto;
             margin: 20px;
         }
-    
+
         .card-img {
             height: auto;
         }
