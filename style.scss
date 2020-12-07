@@ -43,7 +43,16 @@ $color4: grey;
 .t2 {
     color: $color2;
     font-family: fuente4, serif;
-    font-size: 40px;
+    font-size: 25px;
+    text-align: justify;
+    text-indent: 8px;
+    font-style: bolder;
+}
+
+.t3 {
+    color: $color2;
+    font-family: fuente4, serif;
+    font-size: 35px;
     text-align: center;
     font-style: bolder;
 }
@@ -55,6 +64,13 @@ $color4: grey;
     text-align: center;
     font-style: bolder;
 
+}
+
+.tm {
+    color: $color1;
+    font-size: 20px;
+    font-family: fuente4;
+    font-style: bolder;
 }
 
 /*parrafos*/
@@ -108,9 +124,9 @@ $color4: grey;
 .link2 {
     color: $color2;
     text-decoration: none;
-    text-align: center;
+    text-align: justify;
     font-size: 20px;
-    font-family: fuente1;
+    font-family: fuente3;
 }
 
 
@@ -132,7 +148,7 @@ $color4: grey;
 .tm:hover {
     text-decoration: none;
     color: $color1;
-    font-size: 25px;
+    font-size: 24px;
 }
 
 .link2:hover {
@@ -150,12 +166,7 @@ $color4: grey;
 
 /*barra de navegacion*/
 
-.tm {
-    color: $color1;
-    font-size: 20px;
-    font-family: fuente4;
-    font-style: bolder;
-}
+
 
 #barra {
     display: flex;
@@ -188,14 +199,14 @@ $color4: grey;
     background-image: url(img/img22.jpg);
     height: 700px;
     padding: 20px;
-    justify-content: center;
 
     .descripcion {
         width: 100%;
     }
 
     .producto {
-        width: 23%;
+        margin-top:20px;
+        width: 23.3%;
     }
 
 }
@@ -209,7 +220,7 @@ $color4: grey;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 10px;
+        padding: 20px;
 
         .paso {
             width: 30%;
@@ -297,7 +308,7 @@ $color4: grey;
 #footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 /* media query*/

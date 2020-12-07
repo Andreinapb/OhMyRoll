@@ -37,7 +37,16 @@
 .t2 {
   color: white;
   font-family: fuente4, serif;
-  font-size: 40px;
+  font-size: 25px;
+  text-align: justify;
+  text-indent: 8px;
+  font-style: bolder;
+}
+
+.t3 {
+  color: white;
+  font-family: fuente4, serif;
+  font-size: 35px;
   text-align: center;
   font-style: bolder;
 }
@@ -47,6 +56,13 @@
   font-family: fuente4, serif;
   font-size: 20px;
   text-align: center;
+  font-style: bolder;
+}
+
+.tm {
+  color: #A84144;
+  font-size: 20px;
+  font-family: fuente4;
   font-style: bolder;
 }
 
@@ -99,9 +115,9 @@
 .link2 {
   color: white;
   text-decoration: none;
-  text-align: center;
+  text-align: justify;
   font-size: 20px;
-  font-family: fuente1;
+  font-family: fuente3;
 }
 
 /*efectos*/
@@ -120,7 +136,7 @@
 .tm:hover {
   text-decoration: none;
   color: #A84144;
-  font-size: 25px;
+  font-size: 24px;
 }
 
 .link2:hover {
@@ -136,13 +152,6 @@
 }
 
 /*barra de navegacion*/
-.tm {
-  color: #A84144;
-  font-size: 20px;
-  font-family: fuente4;
-  font-style: bolder;
-}
-
 #barra {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,9 +190,6 @@
   background-image: url(img/img22.jpg);
   height: 700px;
   padding: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 #producto .descripcion {
@@ -191,7 +197,8 @@
 }
 
 #producto .producto {
-  width: 23%;
+  margin-top: 20px;
+  width: 23.3%;
 }
 
 #pedir {
@@ -209,7 +216,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px;
+  padding: 20px;
 }
 
 #pedir #pasos .paso {
@@ -309,9 +316,9 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* media query*/
