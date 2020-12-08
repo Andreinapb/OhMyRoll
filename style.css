@@ -156,6 +156,12 @@
   width: 100%;
 }
 
+.img2 {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
 /*barra de navegacion*/
 #barra {
   display: -webkit-box;
@@ -184,6 +190,7 @@
 #nosotros #historia {
   width: 50%;
   height: 80%;
+  border-radius: 10px;
 }
 
 #producto {
@@ -202,11 +209,13 @@
 
 #producto .descripcion {
   width: 100%;
+  border-radius: 10px;
 }
 
 #producto .producto {
   margin-top: 20px;
   width: 23.3%;
+  border-radius: 10px;
 }
 
 #pedir {
@@ -230,10 +239,10 @@
 #pedir #pasos .paso {
   width: 30%;
   margin: 10px;
-  padding: 5px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 20px;
 }
 
 #pedir #pasos .paso .card-img {
@@ -241,25 +250,31 @@
 }
 
 /*body productos*/
-#carta {
+#menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 100%;
 }
 
-#carta .carta {
-  width: 40%;
-  height: 450px;
-  margin: 20px;
+#menu #bienvenida {
+  width: 100%;
 }
 
-#carta .card-img {
-  height: 100%;
+#menu .ingredientes {
+  width: 49%;
+  margin: 5px;
+  border-radius: 10px;
+  padding-top: 50px;
+  height: 550px;
+}
+
+#menu #ingrediente__img {
+  width: 49%;
+  margin: 5px;
+  height: 550px;
 }
 
 /*body recomendaciones*/
@@ -301,9 +316,10 @@
   font-size: 20px;
   text-align: center;
   border: solid 3px #A84144;
+  border-radius: 10px;
   padding: 5px;
   margin-bottom: 30px;
-  background-image: url(img/img22.jpg);
+  background-image: url(img/img10.jpg);
   opacity: 0.7;
 }
 

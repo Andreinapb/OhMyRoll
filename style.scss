@@ -93,7 +93,7 @@ $color4: grey;
     color: $color2;
     font-size: 20px;
     text-align: center;
-    font-style: italic;;
+    font-style: italic;
 }
 
 /*iconos*/
@@ -171,6 +171,13 @@ $color4: grey;
     width: 100%;
 }
 
+.img2 {
+
+    height:100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
 /*barra de navegacion*/
 
 
@@ -197,6 +204,7 @@ $color4: grey;
     #historia {
         width: 50%;
         height: 80%;
+        border-radius: 10px;
     }
 }
 
@@ -210,11 +218,13 @@ $color4: grey;
 
     .descripcion {
         width: 100%;
+        border-radius: 10px;
     }
 
     .producto {
         margin-top:20px;
         width: 23.3%;
+        border-radius: 10px;
     }
 
 }
@@ -233,8 +243,8 @@ $color4: grey;
         .paso {
             width: 30%;
             margin: 10px;
-            padding: 5px;
             justify-content: center;
+            border-radius: 20px;
 
             .card-img {
                 height: 100%;
@@ -244,23 +254,30 @@ $color4: grey;
 }
 
 /*body productos*/
-#carta {
-    display: flex;
+ #menu{ display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    width: 100%;
+    
 
-
-    .carta {
-        width: 40%;
-        height: 450px;
-        margin: 20px;
+    #bienvenida {
+        width: 100%;
     }
 
-    .card-img {
-        height: 100%;
+    .ingredientes {
+        width: 49%;
+        margin: 5px;
+        border-radius: 10px;
+        padding-top: 50px;
+        height: 550px;
     }
-}
 
+    #ingrediente__img{
+        width: 49%;
+        margin: 5px;
+        height: 550px;
+    }
+
+ }
 /*body recomendaciones*/
 
 #recomendaciones {
@@ -295,9 +312,10 @@ $color4: grey;
     font-size: 20px;
     text-align: center;
     border: solid 3px $color1;
+    border-radius: 10px;
     padding: 5px;
     margin-bottom: 30px;
-    background-image: url(img/img22.jpg);
+    background-image: url(img/img10.jpg);
     opacity: 0.7;
 
     #submit {
