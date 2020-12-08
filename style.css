@@ -264,7 +264,7 @@
 }
 
 #menu .ingredientes {
-  width: 49%;
+  width: 50%;
   margin: 5px;
   border-radius: 10px;
   padding-top: 50px;
@@ -272,7 +272,7 @@
 }
 
 #menu #ingrediente__img {
-  width: 49%;
+  width: 48%;
   margin: 5px;
   height: 550px;
 }
@@ -464,28 +464,33 @@
   }
   #recomendaciones .imagen {
     width: 100%;
+    height: 400px;
   }
   #recomendaciones .recomendacion {
     padding-top: 50px;
     width: 100%;
   }
-  #carta {
+  #menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 100%;
   }
-  #carta .carta {
-    width: auto;
-    height: auto;
-    margin: 20px;
+  #menu #bienvenida {
+    width: 100%;
   }
-  #carta .card-img {
-    height: auto;
+  #menu .ingredientes {
+    width: 100%;
+    margin: 5px;
+    border-radius: 10px;
+    padding-top: 50px;
+    height: 550px;
+  }
+  #menu #ingrediente__img {
+    width: 100%;
+    height: 500px;
   }
   #formulario {
     display: -webkit-box;
@@ -493,6 +498,7 @@
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    width: 90%;
   }
   #formulario #mensaje {
     display: none;
