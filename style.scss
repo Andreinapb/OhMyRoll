@@ -159,6 +159,11 @@ $color4: grey;
     font-size: 30px;
 }
 
+.link:hover { opacity: 0.4;
+
+
+}
+
 /*imagenes*/
 .img1 {
 
@@ -319,6 +324,56 @@ $color4: grey;
       }
 }
 
+#faq {display: flex;
+    flex-wrap: wrap;
+
+    #dudas {width:100%;
+    padding: 20px;}
+
+    .acordeon {
+        width: 50%;
+
+        input {
+            display: none;
+        }
+
+        .pregunta {
+            display: block;
+            height:70px;
+            background-color: $color4;
+            opacity: 0.7;
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 15px;
+
+        }
+
+        .respuesta {
+            height: 0;
+            background-color: $color2;
+            opacity: 0.7;
+            color: $color1;
+            font-family: fuente4, serif;
+            font-size: 15px;
+            overflow: hidden;
+            margin: 0;
+            transition: all o.5s;
+            
+        }
+
+        input:checked~.respuesta {
+            height: auto;
+
+        }
+    }
+
+    .imagen {
+        width: 48%;
+        margin-left: 20px;
+        padding-bottom: 20px;
+    }
+}
+
 /* media query*/
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -421,73 +476,57 @@ $color4: grey;
             display: none;
         }
     }
-}
 
-#footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-
-@media (min-width: 767px) and (max-width: 1024px) {
-
-    #barra1 {
-        display: none;
-    }
-
-
-    #nosotros {
-        display: flex;
-        height: 100%;
-        padding: 20px;
-    }
-
-
-    #producto {
-        display: flex;
-        flex-wrap: wrap;
-        height: auto;
-        padding: 5px;
-
-        .descripcion {
-            width: 100%;
-        }
-
-        .producto {
-            width: 45%;
-        }
-    }
-
-    #pedir {
-        width: 100%;
-        height: auto;
-
-        #pasos {
-            display: flex;
-            flex-wrap: wrap;
-
-            .paso {
-                width: 100%;
-            }
-        }
-
-        .card-img {
-            height: 200px;
-            width: 200px;
-            justify-self: center;
-        }
-    }
-
-
-
+    
     #footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-}
 
+       /*Responsive FaQ*/
+       #faq {display: flex;
+        flex-wrap: wrap;
+    
+        .acordeon {
+            width: 100%;
+
+            input {
+                display: none;
+            }
+
+            .pregunta {
+                display: block;
+                background-color: $color4;
+                opacity: 0.7;
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            .respuesta {
+                height: 0;
+                background-color: $color2;
+                opacity: 0.7;
+                color: $color1;
+                font-family: fuente4, serif;
+                font-size: 15px;
+                overflow: hidden;
+                margin: 0;
+                transition: all o.5s;
+                text-align:justify;
+            }
+
+            input:checked~.respuesta {
+                height: auto;
+
+            }
+        }
+
+        .imagen {
+            width: 100%;
+        }
+    }
+}
 
 @media (min-width: 1024px) {
 

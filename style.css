@@ -146,6 +146,10 @@
   font-size: 30px;
 }
 
+.link:hover {
+  opacity: 0.4;
+}
+
 /*imagenes*/
 .img1 {
   height: 100%;
@@ -327,6 +331,60 @@
   margin-right: 10%;
 }
 
+#faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#faq #dudas {
+  width: 100%;
+  padding: 20px;
+}
+
+#faq .acordeon {
+  width: 50%;
+}
+
+#faq .acordeon input {
+  display: none;
+}
+
+#faq .acordeon .pregunta {
+  display: block;
+  height: 70px;
+  background-color: grey;
+  opacity: 0.7;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+#faq .acordeon .respuesta {
+  height: 0;
+  background-color: white;
+  opacity: 0.7;
+  color: #A84144;
+  font-family: fuente4, serif;
+  font-size: 15px;
+  overflow: hidden;
+  margin: 0;
+  -webkit-transition: all o 0.5s;
+  transition: all o 0.5s;
+}
+
+#faq .acordeon input:checked ~ .respuesta {
+  height: auto;
+}
+
+#faq .imagen {
+  width: 48%;
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+
 /* media query*/
 @media (min-width: 320px) and (max-width: 767px) {
   #barra {
@@ -423,65 +481,6 @@
   #formulario #mensaje {
     display: none;
   }
-}
-
-#footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media (min-width: 767px) and (max-width: 1024px) {
-  #barra1 {
-    display: none;
-  }
-  #nosotros {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%;
-    padding: 20px;
-  }
-  #producto {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    height: auto;
-    padding: 5px;
-  }
-  #producto .descripcion {
-    width: 100%;
-  }
-  #producto .producto {
-    width: 45%;
-  }
-  #pedir {
-    width: 100%;
-    height: auto;
-  }
-  #pedir #pasos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #pedir #pasos .paso {
-    width: 100%;
-  }
-  #pedir .card-img {
-    height: 200px;
-    width: 200px;
-    -ms-grid-column-align: center;
-        justify-self: center;
-  }
   #footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -491,6 +490,46 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  /*Responsive FaQ*/
+  #faq {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #faq .acordeon {
+    width: 100%;
+  }
+  #faq .acordeon input {
+    display: none;
+  }
+  #faq .acordeon .pregunta {
+    display: block;
+    background-color: grey;
+    opacity: 0.7;
+    padding: 10px;
+    cursor: pointer;
+  }
+  #faq .acordeon .respuesta {
+    height: 0;
+    background-color: white;
+    opacity: 0.7;
+    color: #A84144;
+    font-family: fuente4, serif;
+    font-size: 15px;
+    overflow: hidden;
+    margin: 0;
+    -webkit-transition: all o 0.5s;
+    transition: all o 0.5s;
+    text-align: justify;
+  }
+  #faq .acordeon input:checked ~ .respuesta {
+    height: auto;
+  }
+  #faq .imagen {
+    width: 100%;
   }
 }
 
