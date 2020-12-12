@@ -66,6 +66,14 @@
   font-style: bolder;
 }
 
+.tp {
+  color: white;
+  font-size: 23px;
+  font-family: fuente4;
+  font-style: italic;
+  font-style: bolder;
+}
+
 /*parrafos*/
 .p1 {
   font-family: fuente3, serif;
@@ -222,6 +230,15 @@
   background-image: url(img/img18.jpg);
   width: 100%;
   height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#pedir .pregunta {
+  width: 100%;
 }
 
 #pedir #pasos {
@@ -302,25 +319,90 @@
 
 /*body formulario*/
 #formulario {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 100%;
-      grid-template-rows: 100%;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   height: auto;
   width: 65%;
-  color: grey;
+  margin-left: 250px;
+  color: black;
   font-weight: bolder;
   font-family: fuente3;
   font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   border: solid 3px #A84144;
   border-radius: 10px;
-  padding: 5px;
   margin-bottom: 30px;
   background-image: url(img/img10.jpg);
   opacity: 0.7;
+}
+
+#formulario #datos {
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+}
+
+#formulario #datos .pregunta {
+  width: 10%;
+  text-align: justify;
+}
+
+#formulario #datos .respuesta {
+  border: solid 2px #A84144;
+  width: 22%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#formulario #bandeja {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+#formulario #bandeja .bandeja {
+  width: 65%;
+}
+
+#formulario #bandeja .seleccion {
+  width: 100%;
+}
+
+#formulario .pago {
+  margin: 10px;
+  width: 100%;
+}
+
+#formulario #direccion {
+  margin: 10px;
+  width: 100%;
+}
+
+#formulario #direccion .dato {
+  width: 10%;
+  text-align: justify;
+}
+
+#formulario #direccion .descripcion {
+  border: solid 2px #A84144;
+  width: 22%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#formulario #mensaje {
+  width: 100%;
 }
 
 #formulario #submit {
@@ -384,11 +466,10 @@
   opacity: 0.7;
   color: #A84144;
   font-family: fuente4, serif;
-  font-size: 15px;
+  font-size: 20px;
+  text-indent: 50px;
   overflow: hidden;
   margin: 0;
-  -webkit-transition: all o 0.5s;
-  transition: all o 0.5s;
 }
 
 #faq .acordeon input:checked ~ .respuesta {
@@ -402,7 +483,7 @@
 }
 
 /* media query*/
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 667px) {
   #barra {
     display: none;
   }
@@ -492,17 +573,6 @@
     width: 100%;
     height: 500px;
   }
-  #formulario {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    width: 90%;
-  }
-  #formulario #mensaje {
-    display: none;
-  }
   #footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -512,6 +582,67 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  #formulario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 80%;
+    width: 90%;
+    margin-left: 25px;
+    color: black;
+    font-weight: bolder;
+    font-family: fuente3;
+    font-size: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    border: solid 3px #A84144;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-image: url(img/img10.jpg);
+    opacity: 0.7;
+  }
+  #formulario #datos .pregunta {
+    width: 100%;
+    text-align: center;
+  }
+  #formulario #datos .respuesta {
+    width: 60%;
+  }
+  #formulario #bandeja .bandeja {
+    width: 10%;
+  }
+  #formulario #bandeja .seleccion {
+    width: 90%;
+  }
+  #formulario #direccion {
+    margin: 10px;
+    width: 100%;
+  }
+  #formulario #direccion .dato {
+    width: 100%;
+    text-align: center;
+  }
+  #formulario #direccion .descripcion {
+    width: 80%;
+    border-radius: 5px;
+    text-align: center;
+  }
+  #formulario #mensaje {
+    display: none;
+  }
+  #formulario #submit {
+    background-color: #A84144;
+    font-family: fuente3;
+    color: white;
+    height: 35px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
   }
   /*Responsive FaQ*/
   #faq {
@@ -555,7 +686,211 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 668px) and (max-width: 1024px) {
+  #barra {
+    display: none;
+  }
+  #nosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url(img/nosotros1.jpg);
+    height: 100%;
+    padding: 20px;
+  }
+  #nosotros #historia {
+    width: 100%;
+    height: 100%;
+  }
+  #producto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
+  }
+  #producto .descripcion {
+    width: 100%;
+    border-radius: 10px;
+  }
+  #producto .producto {
+    margin-top: 10px;
+    width: 34%;
+    border-radius: 10px;
+  }
+  #pedir {
+    width: 100%;
+    height: auto;
+  }
+  #pedir #pasos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #pedir #pasos .paso {
+    width: 30%;
+    margin: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #pedir #pasos .paso .card-img {
+    height: 100%;
+  }
+  #recomendaciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 5px;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #recomendaciones .imagen {
+    width: 100%;
+    height: 400px;
+  }
+  #recomendaciones .recomendacion {
+    padding-top: 50px;
+    width: 100%;
+  }
+  #menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  #menu #bienvenida {
+    width: 100%;
+  }
+  #menu .ingredientes {
+    width: 100%;
+    margin: 5px;
+    border-radius: 10px;
+    padding-top: 50px;
+    height: 550px;
+  }
+  #menu #ingrediente__img {
+    width: 100%;
+    height: 500px;
+  }
+  #formulario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 80%;
+    width: 90%;
+    margin-left: 25px;
+    color: black;
+    font-weight: bolder;
+    font-family: fuente3;
+    font-size: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    border: solid 3px #A84144;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-image: url(img/img10.jpg);
+    opacity: 0.7;
+  }
+  #formulario #datos .pregunta {
+    width: 100%;
+    text-align: center;
+  }
+  #formulario #datos .respuesta {
+    width: 60%;
+  }
+  #formulario #bandeja .bandeja {
+    width: 10%;
+  }
+  #formulario #bandeja .seleccion {
+    width: 90%;
+  }
+  #formulario #direccion {
+    margin: 10px;
+    width: 100%;
+  }
+  #formulario #direccion .dato {
+    width: 100%;
+    text-align: center;
+  }
+  #formulario #direccion .descripcion {
+    width: 80%;
+    border-radius: 5px;
+    text-align: center;
+  }
+  #formulario #mensaje {
+    width: 100%;
+  }
+  #footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  /*Responsive FaQ*/
+  #faq {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #faq .acordeon {
+    width: 100%;
+  }
+  #faq .acordeon input {
+    display: none;
+  }
+  #faq .acordeon .pregunta {
+    display: block;
+    background-color: grey;
+    opacity: 0.7;
+    padding: 10px;
+    cursor: pointer;
+  }
+  #faq .acordeon .respuesta {
+    height: 0;
+    background-color: white;
+    opacity: 0.7;
+    text-indent: 10px;
+    color: #A84144;
+    font-family: fuente4, serif;
+    font-size: 20px;
+    overflow: hidden;
+    margin: 0;
+    -webkit-transition: all o 0.5s;
+    transition: all o 0.5s;
+    text-align: justify;
+  }
+  #faq .acordeon input:checked ~ .respuesta {
+    height: auto;
+  }
+  #faq .imagen {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1025px) {
   #barra2 {
     display: none;
   }
