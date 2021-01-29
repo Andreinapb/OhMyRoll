@@ -1,22 +1,15 @@
 function agregarCarrito(bandeja) {
     const div = document.createElement('div');
 
-    const nombre = CarritoDom.h2(bandeja.nombre);
+    const nombre = carritoDOM.h2 (bandeja.nombre);
 
-    const cantidad = document.createElement('p');
-    cantidad.textContent = bandeja.cantidad;
+    const cantidad = carritoDOM.p (bandeja.cantidad);
 
-    const precio = document.createElement('p');
-    precio.textContent = bandeja.precio;
+    const precio = carritoDOM.p (bandeja.precio);
 
-    const imagen = document.createElement('img');
-    imagen.src = bandeja.imagen;
+    const imagen = carritoDOM.img (bandeja.imagen);
 
-
-    const boton = document.createElement('button');
-    boton.textContent = 'Agregar Producto';
-    boton.classList.add('btnAgregar');
-
+    const boton = carritoDOM.boton ('agregar', 'btnproduct');
 
     div.appendChild(nombre);
     div.appendChild(cantidad);
@@ -27,7 +20,8 @@ function agregarCarrito(bandeja) {
     return div;
 }
 
-const CarritoDom = new carritoDom ();
+let carritoDOM = new DOMcarrito;
+
 
 window.addEventListener('load', function () {
 
