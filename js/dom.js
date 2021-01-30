@@ -23,13 +23,12 @@ class DOMcarrito {
         return img;
     }
 
-    boton (click,clase) {
-        const boton = document.createElement ('button');
-        boton.textContent = click;
-        boton.classList.add = (clase);
-
-        return boton;
-
-    }
+    button(content, className, id) {
+        const button = document.createElement('button');
+        button.textContent = content;
+        button.classList.add(className);
+        button.setAttribute('data-id', id);
+        return button;    
+      }
 
 }
