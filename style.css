@@ -170,6 +170,14 @@
   border-radius: 10px;
 }
 
+.img3 {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  margin: 20px;
+
+}
+
 /*barra de navegacion*/
 #barra {
   display: -webkit-box;
