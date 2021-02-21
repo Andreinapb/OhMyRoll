@@ -4,267 +4,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="OhRoll" content="Encuentra los mas
     deliciosos rolles de canela para compartir, buscar o pedir a domicilio. Calientalos y disfruta en con un extra de
     crema">
     <meta name="keywords" content="Rolls, canela, crema, comida, postre, domicilio">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <title>OH MY ROLL</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,700i|Open+Sans:400,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <section>
-            <div class="container-fluid">
-                <!-- aqui empiza mi menu de pc-->
-
-                <div id="barra">
-
-                    <ul class="nav">
-                        <li> <a class="navbar-brand" href="index.html">
-                                <img  class="icono2" src="img/logo.jpg" loading="lazy">
-                            </a></li>
-                        <li class="elemento nav-item">
-                            <a class="tm nav-link" href="index.html#nosotros">Nosotros</a>
-                        </li>
-                        <li class="elemento nav-item">
-                            <a class="tm nav-link" href="#producto">Nuestros Productos</a>
-                        </li>
-                        <li class="elemento nav-item">
-                            <a class="tm nav-link" href="index.html#pedir">¿Cómo pedir?</a>
-                        </li>
-                        <li class="elemento nav-item">
-                            <a class="tm nav-link" href="carrito.html">¡Haz tu pedido!</a>
-                        </li>
-                        <li class="elemento nav-item">
-                            <a class="tm nav-link" href="recomendacion.html">Recomendaciones</a>
-                        </li>
-                        <li class="elemento nav-item">
-                            <a class="tm nav-link" href="preguntas.html">Preguntas Frecuentes</a>
-                        </li>  
-                        <li class="elemento nav-item">
-                            <a class="tm nav-link" href="index.html#footer">Contáctanos</a>
-                        </li>
-                       
-                    </ul>
-                </div>
-                <!-- aqui termina mi menu de pc-->
-
-                <!-- aqui empieza mi menu de mobile-->
-                <div id="barra2">
-
-                    <div class="collapse" id="navbarToggleExternalContent">
-
-                        <div class="row">
-
-                            <ul class="nav flex-column">
-                            <li class="elemento nav-item">
-                                <a class="tm nav-link" href="index.html#nosotros">Nosotros</a>
-                            </li>
-                            <li class="elemento nav-item">
-                                <a class="tm nav-link" href="index.html#producto">Nuestros Productos</a>
-                            </li>
-                            <li class="elemento nav-item">
-                                <a class="tm nav-link" href="index.html#pedir">¿Cómo pedir?</a>
-                            </li>
-                            <li class="elemento nav-item">
-                                <a class="tm nav-link" href="carrito.html">¡Haz tu pedido!</a>
-                            </li>
-                            <li class="elemento nav-item">
-                                <a class="tm nav-link" href="recomendacion.html">Recomendaciones</a>
-                            </li>
-                            <li class="elemento nav-item">
-                                <a class="tm nav-link" href="preguntas.html">Preguntas Frecuentes</a>
-                            </li>
-                           
-                            <li class="elemento nav-item">
-                                <a class="tm nav-link" href="index.html">Contáctanos</a>
-                            </li>
-                            
-                            </ul>
-
-                        </div>
-
-                    </div>
-
-                    <nav class="navbar navbar-light">
-
-                        <div id="redes">
-                            <a href="index.html"><img src="img/logo.jpg" class="icono2"></a>
-                        </div>
-
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                    </nav>
-
-                </div>
-
-                 <!--aqui termina mi menu mobile-->
-
+        <div class="contenido-header">
+            <div class="fondo" id="fondo">
+                <h1 class="texto">OH MY ROLL</h1>
             </div>
+        </div>
+
+    <nav class="menu">
+        <a href="#nosotros">Nosotros</a>
+        <a href="carrito.html">Nuestros Productos</a>
+        <a href="#recomendaciones">Recomendaciones</a>
+        <a href="faq.html">Faq</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <main class="container">
+        <div class="row nosotros justify-content-center" id="nosotros">
+            <div class="col-12 text-center">
+                <h2 class="subtitulo"><span>¿Quienes somos?</span></h2>
+                <h3 class="titulo">La vida con frosting es mejor.</h3>
+                <p>
+                    Emprendimiento de rolls de canela que con tienen capas de sabrosura, cremosidad y suavidad.
+                    Delicosos y 100% artesanales con los ingredientes de mejor calidad y sobre todo hechos con mucho
+                    amor.
+                </p>
+                <a href="#" class="enlace"> ¿Te gustaría probarlos?</a>
             </div>
-        </section>
-    </header>
-
-    <!-- aqui empieza seccion nosotros-->
-
-    <section class="parallax" id="nosotros">
-        <div class="fondo1" id="historia">
-
-            <h4 class="t1"> Conoce <br> ¡Oh my Roll!</h4>
-            <p class="p1">
-                ¡Oh my Roll! Es un empredimiento Colombiano creado en el año 2020. Su dueña y única empleada hasta
-                la fecha por lo reciente del empredimiento es María Parra, quién se sorprendió gratamente al ver que
-                sus rolls de canela que empezaron como un hobbie terminaron enamorando con su sabor a muchas
-                personas.
-            </p>
-
-        </div>
-    </section>
-
-    <!-- aqui empieza seccion productos-->
-
-    <section class="parallax container-fluid" id="producto">
-
-        <div class="fondo1 descripcion">
-            <h2 class="t1">Nuestros rolls</h2>
-            <p class="p1">Deliciosos rolls artesanales, nuestra masa a base de vainilla y canela. Bañados en la crema de
-                oh my roll hecha con nuestra receta especial, que los hace tan deliciosos. Todos nuestros ingredientes
-                son de la mejor calidad y cada uno de nuestros rolls es elaborado en mano con la mayor dedicación</p>
         </div>
 
-        <div class="fondo1 producto">
-            <h2 class="t1">Bandeja de 4 rolls</h2>
-            <p class="p1"> 4 delicosos rolls, Tamaño estándar con extra de crema, adicional un vasito de crema de la
-                casa.</p>
-        </div>
+        <div class="row productos">
+            <article class="col-12 text-center">
+                <h2 class="subtitulo"><span>Nuestros productos</span></h2>
+                <p class="titulo">Un bocado nunca es suficiente</p>
+                <p>"Amaso y horneo con amor e ilusión de que a cada uno mis clientes les encante tanto como a mi"</p>
+            </article>
 
-        <div class="fondo1 producto">
-            <h2 class="t1">Bandeja de 6 rolls</h2>
-            <p class="p1">6 delicosos rolls, Tamaño estándar con extra de crema, adicional un vasito de crema de la
-                casa.</p>
-        </div>
+            <div class="col-12">
+                <div class="row justify-content-center">
+                    <article class="col-6 col-lg-3 py-1">
+                        <figure class="producto">
+                            <img src="img/img3.jpg" class="img-fluid" alt="">
+                            <figcaption class="overlay">
+                                <p class="overlay-texto">Bandeja de 4 Rolls + frosting</p>
+                            </figcaption>
+                        </figure>
+                    </article>
 
-        <div class="fondo1 producto">
-            <h2 class="t1">Bandeja de 8 rolls</h2>
-            <p class="p1"> 8 delicosos rolls, Tamaño estándar con extra de crema, adicional un vasito de crema de la
-                casa.</p>
-        </div>
+                    <article class="col-6 col-lg-3 py-1">
+                        <figure class="producto">
+                            <img src="img/img15.jpg" class="img-fluid" alt="">
+                            <figcaption class="overlay">
+                                <p class="overlay-texto">Bandeja de 6 rolls + frosting</p>
+                            </figcaption>
+                        </figure>
+                    </article>
 
-        <div class="fondo1 producto">
-            <h2 class="t1">Bandeja de 12 rolls</h2>
-            <p class="p1">12 delicosos rolls, Tamaño estándar con extra de crema, adicional un vasito de crema de la
-                casa.</p>
-        </div>
+                    <article class="col-6 col-lg-3 py-1">
+                        <figure class="producto">
+                            <img src="img/img14.jpg" class="img-fluid" alt="">
+                            <figcaption class="overlay">
+                                <p class="overlay-texto">Bandeja de 8 rolls + frosting</p>
+                            </figcaption>
+                        </figure>
+                    </article>
 
-        <div class="accion">
-            <a class="link1" href="producto.html"> ¡Consulta nuestros ingredientes!</a>
-        </div>
+                    <article class="col-6 col-lg-3 py-1">
+                        <figure class="producto">
+                            <img src="img/img8.jpg" class="img-fluid" alt="">
+                            <figcaption class="overlay">
+                                <p class="overlay-texto">Bandeja de 12 rolls + frosting</p>
+                            </figcaption>
+                        </figure>
+                    </article>
 
-    </section>
-
-    <!-- aqui empieza seccion pedir-->
-
-    <section class="parallax container-fluid" id="pedir">
-        <div id="pasos">
-<div class="pregunta"> <h2 class="t1">¿Cómo pedir tus rolls? </h2></div>
-            <div class="paso card">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="img/img6.jpg" class="card-img">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="fondo2 card-body">
-                      <h5 class="t2 card-title">¡Paso Uno</h5>
-                      <p class="p2 card-text">Agenda tu pedido con al menos 3 días de anticipación. Puedes hacerlo consultando por nuestro whatsapp o llenando nuestro formulario.</p>
-                    </div>
-                  </div>
+                    <button class="d-block btn-productos"><a href="carrito.html">Pide los tuyos aquí</a></button>
                 </div>
-              </div>
- 
-              <div class="paso card">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="img/img5.jpg" class="card-img">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="fondo2 card-body">
-                      <h5 class="t2 card-title">¡Paso Dos!</h5>
-                      <p class="p2 card-text">Elige tus rolls, indícanos la cantidad que quieres por bandeja, puedes ver tus opciones de rolls en la sección de arriba o nuestro formulario.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="paso card">
-                <div class="row no-gutters">
-                  <div class="col-md-4">
-                    <img src="img/img8.jpg" class="card-img">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="fondo2 card-body">
-                      <h5 class="t2 card-title">¡Paso Tres!</h5>
-                      <p class="p2 card-text">Paga tu pedido, puedes pagar el 50% con tu reserva y el otro 50% en la entrega de tus rolls, consulta los medios de pago en nuestro formulario.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="accion">
-                <a class="link1" href="#producto">¡Ve nuestro Menú!</a>
             </div>
-      
         </div>
-    </section>
+    </main>
 
-    <!-- aqui empieza seccion el footer-->
+    <div class="separador text-center text-white">
+        <p><q>En esta pequeña cocina esta creciendo un gran sueño</q></p>
+    </div>
+
+    <div class="container" id="recomendaciones">
+        <div class="row recomendaciones d-flex justify-content-around">
+            <article class="col-10 col-sm-3">
+                <figure class="text-center">
+                    <img class="icono" src="img/tiempo.png" alt="">
+                    <figcaption>
+                        <p>
+                            <strong class="mb-2 titulo-recomendacion">Tibio es mas rico</strong>
+                            <div class="w-100">Caliéntalos 15 segundos en el micro</div>
+                        </p>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="col-10 col-sm-3">
+                <figure class="text-center">
+                    <img class="icono" src="img/exclamacion.png" alt="">
+                    <figcaption>
+                        <p>
+                            <strong class="mb-2 titulo-recomendacion">Disfrutálos como te gusten</strong>
+                            <div class="w-100"></div>
+                            Si no te gustan tan dulces, te recomiendo no ponerle el frosting
+                        </p>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="col-10 col-sm-3">
+                <figure class="text-center">
+                    <img class="icono" src="img/regalo.png" alt="">
+                    <figcaption>
+                        <p>
+                            <strong class="mb-2 titulo-recomendacion">Te tengo un regalo</strong>
+                            <div class="w-100"></div>
+                            Por cada amigo que refieras, te llevarás una bandeja de 8 rolls por el precio de la de 6
+                            rolls
+                        </p>
+                    </figcaption>
+                </figure>
+            </article>
+        </div>
+    </div>
+
 
     <footer>
-        <section id="footer" class="fondo2 container-fluid">
+        <div class="row justify-content-center contacto" id="contacto">
 
-            <div class="elemento">
-                <h2 class="t2">Síguenos</h2>
-                <a href="" class="link2"><img src="img/instagram.png" class="icono1">@ohmyroll</a>
-                
+            <div class="col-12 col-md-9 text-center">
+                <h2 class="subtitulo"><span>Contactanos</span></h2>
             </div>
 
-            <div class="elemento">
-
-                <h2 class="t2">Contáctanos</h2>
-                <a href="" class="link2"><img src="img/whatsapp.png" class="icono1"> 54 11 263 00 356</a>
+            <div class="redes col-12 d-flex justify-content-center ">
+                <a href="#" class="redes-text"><img src="img/instagram.png" alt="" class="icono">Instagram</a>
+                <a href="#" class="redes-text"><img src="img/whatsapp.png" alt="" class="icono">whatsapp</a>
+                <a href="#" class="redes-text"><img src="img/ayuda.png" alt="" class="icono">Faq</a>
             </div>
 
-            <div class="elemento">
-
-                <h2 class="t2">Faq</h2>
-                <p><img src="img/ayuda.png" class="icono1"> <a href="preguntas.html" class="link2">Consulta
-                        tus dudas!</a></p>
-            </div>
-
-        </section>
+        </div>
     </footer>
 
 
 
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
-    </script>
-
-
-
+    <script src="js/efectos.js"></script>
 </body>
 
 </html>
