@@ -1,9 +1,6 @@
 let tarjeta = ""
 let contenidoBandeja = []
-const carrito = $("#carrito");
-const productos = $("#catalogo-productos");
-const listaProductos = document.querySelector('#lista-carrito tbody');
-const vaciarCarritoBtn =$("#vaciar-carrito");
+
 
 function cargoTarjeta() {
     $.ajax({
