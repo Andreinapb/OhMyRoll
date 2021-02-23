@@ -14,26 +14,61 @@
     <meta name="keywords" content="Rolls, canela, crema, comida, postre, domicilio">
     <title>OH MY ROLL</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,700i|Open+Sans:400,700&display=swap"
         rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script defer src="js/catalogo.js"></script>
-    <script defer src="js/objetoCompra.js"></script>
-    <script defer src="js/checkout.js"></script>
+    <script defer src="js/carrito.js"></script>
+    <script defer src="js/pedido.js"></script>
 </head>
 
 <body>
     <header>
         <nav class="menu">
-            <a href="#nosotros.html">Nosotros</a>
-            <a href="#">Nuestros Productos</a>
-            <a href="#">Recomendaciones</a>
-            <a href="#">Faq</a>
-            <a href="#">Contacto</a>
+            <a href="index.html#nosotros">Nosotros</a>
+            <a href="#recomendaciones">Recomendaciones</a>
+            <a href="faq.html">Faq</a>
+            <a href="#contacto">Contacto</a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <i class="bi bi-basket"></i>
+                Ver Compra</button>
+
     </header>
 
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" >
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Tu carrito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="carrito">
+                    <table id="lista-carrito" class="table">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="vaciar-carrito" class="btn btn-dark" data-bs-dismiss="modal">Vaciar
+                        Carrito</button>
+                    <button type="button" id="procesar-pedido" class="btn btn-dark">Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="container carrito" id="productos">
 
         <article class="row text-center">
@@ -42,77 +77,29 @@
         </article>
 
         <div class="row justify-content-between catalogo" id="catalogo-productos">
-
-<!-- Acá se crean mis tarjetas con js -->
-        </div>
-        <div class="row justify-content-center" >
-            <h6  id="itemscarrito" class="card col-6 col-lg-12"></i> TOTAL DE BANDEJAS EN SU CARRITO: 0</h6>
-            <button class="btn btn-dark btn-large" onclick="muestroCheckout()"><i class="bi bi-cart4 icono-carrito" role="img" alt="Ver carrito"></i></a>
-        </div> 
-    </section>
-
-    <section class="row justify-content-center invisible compra" id="compra">
-
-        <div class="col-12 col-md-9 text-center">
-            <h2 class="subtitulo"><span>Tu Carrito</span></h2>
+            <div class="card col-6 col-lg-3 tarjeta" style="width: 18rem;">
+                <!-- Acá se crean mis tarjetas con js -->
+            </div>
         </div>
 
-        <div class="container justify-content-center">
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col"> Descripción </th>
-                        <th scope="col"> Cantidad</th>
-                        <th scope="col"> Precio</th>
-                        <th scope="col">Subtotal</th>
-                    </tr>
-                </thead>
-                <tbody id="checkout">
-                    <!-- <tr>
-                        <th scope="row">1</th>
-                        <td>Bandeja de 12 rolls</td>
-                        <td>5</td>
-                        <td>$1200</td>
-                        <th>$6000</th>
-                    </tr> -->
-                </tbody>
-            </table>
-
-            <!--  <div id="total">
-                <p> Total pedido
-                    <span>$6000</span></p>
+        <footer>
+            <div class="row justify-content-center contacto" id="contacto">
+    
+                <div class="col-12 col-md-9 text-center">
+                    <h2 class="subtitulo"><span>Contactanos</span></h2>
+                </div>
+    
+                <div class="redes col-12 d-flex justify-content-center ">
+                    <a href="#" class="redes-text"><img src="img/instagram.png" alt="" class="icono">Instagram</a>
+                    <a href="#" class="redes-text"><img src="img/whatsapp.png" alt="" class="icono">whatsapp</a>
+                    <a href="#" class="redes-text"><img src="img/ayuda.png" alt="" class="icono">Faq</a>
+                </div>
+    
             </div>
- -->
-            <br>
-
-            <button id="btnvolver" class="btn btn-dark" onclick=""><i class="bi bi-arrow-left-circle"></i>volver a
-                cursos</button>
-            <button id="btnfinalizarcompra" class="btn btn-dark" onclick=""><i class="bi bi-check-circle"></i>finalizar
-                compra</button>
-            <br>
-            <br>
-            <br>
-        </div>
-    </section>
-
-    <footer>
-        <div class="row justify-content-center contacto">
-
-            <div class="col-12 col-md-9 text-center">
-                <h2 class="subtitulo"><span>Contactanos</span></h2>
-            </div>
-
-            <div class="redes col-12 d-flex justify-content-center ">
-                <a href="#" class="redes-text"><img src="img/instagram.png" alt="" class="icono">Instagram</a>
-                <a href="#" class="redes-text"><img src="img/whatsapp.png" alt="" class="icono">whatsapp</a>
-                <a href="#" class="redes-text"><img src="img/ayuda.png" alt="" class="icono">Faq</a>
-            </div>
-
-
-    </footer>
-
-    <script src="js/efectos.js"></script>
-
+        </footer>>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

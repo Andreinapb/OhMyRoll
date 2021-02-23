@@ -1,14 +1,16 @@
 let tarjeta = ""
 let contenidoBandeja = []
-let carrito = []
-let objetoCarrito = ""
+const carrito = $("#carrito");
+const productos = $("#catalogo-productos");
+const listaProductos = document.querySelector('#lista-carrito tbody');
+const vaciarCarritoBtn =$("#vaciar-carrito");
 
 function cargoTarjeta() {
     $.ajax({
         url: "json/bandeja.json",
         dataType: "json",
         success: function (contenidoBandeja) {
-            localStorage.contenidoBandeja = JSON.stringify(contenidoBandeja)
+            // localStorage.contenidoBandeja = JSON.stringify(contenidoBandeja)
             $.each(contenidoBandeja, function (i) {
                 tarjeta +=
                     `<div class="card col-6 col-lg-3 tarjeta" style="width: 18rem;">
@@ -16,13 +18,11 @@ function cargoTarjeta() {
                 <div class="card-body" >
                 <h5 class="card-title"> ${contenidoBandeja[i].nombre} + ${contenidoBandeja[i].cantidad}</h5> 
                 <p class="card-text"> ${contenidoBandeja[i].precio} </p>
-                <button class="btn btn-dark" onclick="agregarBandeja(${contenidoBandeja[i].id})"><i class=""></i>Agregar</button>
-                <button class="btn btn-dark" onclick="quitarBandeja(${contenidoBandeja[i].id})"><i class=""></i>Quitar</button>
+                <button class="btn btn-dark agregar-carrito" data-id="${contenidoBandeja[i].id}" ><i class=""></i>Agregar</button>
                  </div> 
                  </div>`
             })
             $("#catalogo-productos").html(tarjeta)
-            itemsEnCarrito()
         },
         error: function () {
             console.error(`Ocurrió un error`)
@@ -35,44 +35,7 @@ function cargoTarjeta() {
 }
 
 setTimeout(() => {
-    cargoTarjeta()
-    $('#catalogo-productos').fadeIn(5000)
-})
+    cargoTarjeta ()
+}, 1000);
 
-function itemsEnCarrito() {
-    let leyendacarrito = "TOTAL DE BANDEJAS EN SU CARRITO:"
-    $("#itemscarrito").text(`${leyendacarrito} ${carrito.length}`)
-}
-
-function agregarBandeja(id) {
-    carrito.push(id)
-    localStorage.setItem('Carrito', JSON.stringify(carrito));
-    itemsEnCarrito()
-}
-
-function quitarBandeja(id) {
-    let filtro = carrito.find(c => c == id)
-    if (id == carrito.id) {
-        carrito.splice(id, 1);
-        localstorage.removeItem('Carrito')
-        itemsEnCarrito()
-    }
-
-}
-
-function quitarBandeja (id) {
-    let filtro = carrito.find(c => c == id)
-        if (filtro == id) { carrito.splice(id, 1);
-            itemsEnCarrito()
-        } else { //puedo agregarlo
-            alert("usted no agregó este producto")
-            itemsEnCarrito()
-        }
-}
-
-console.log(quitarBandeja)
-
-
-$document.ready(function () {
-    setTimeout()
-})
+$(document).ready(setTimeout)
