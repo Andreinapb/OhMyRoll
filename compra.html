@@ -45,13 +45,13 @@
                             <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
                             <div class="col-12 col-md-10">
                                 <input type="text" class="form-control" id="cliente"
-                                    placeholder="Ingresa nombre cliente" name="destinatario">
+                                    placeholder="Ingresa nombre cliente" name="destinatario" required >
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
                             <div class="col-12 col-md-10">
-                                <input type="text" class="form-control" id="correo" placeholder="Ingresa tu correo" name="cc_to">
+                                <input type="text" class="form-control" id="correo" required placeholder="Ingresa tu correo" name="cc_to">
                             </div>
                         </div>
 
@@ -76,21 +76,12 @@
                                     <th scope="col">
                                         <p id="subtotal"></p>
                                     </th>
-                                    <!-- <th scope="col"></th> -->
-                                </tr>
-                                <tr>
-                                    <th colspan="4" scope="col" class="text-right">IGV :</th>
-                                    <th scope="col">
-                                        <p id="igv"></p>
-                                    </th>
-                                    <!-- <th scope="col"></th> -->
                                 </tr>
                                 <tr>
                                     <th colspan="4" scope="col" class="text-right">TOTAL :</th>
                                     <th scope="col">
                                         <input id="total" name="monto" class="font-weight-bold border-0" readonly style="background-color: white;"></input>
                                     </th>
-                                    <!-- <th scope="col"></th> -->
                                 </tr>
 
                             </table>
@@ -102,12 +93,12 @@
 
                         <div class="row justify-content-between">
                             <div class="col-md-4 mb-2">
-                                <a href="index.html" class="btn btn-info btn-block">Seguir comprando</a>
+                                <a href="carrito.html" class="btn btn-info btn-block">Seguir comprando</a>
                             </div>
                             <div class="col-xs-12 col-md-4">
-                                <button href="#" class="btn btn-success btn-block" id="procesar-compra">Realizar compra</button>
+                                <a class="btn btn-success btn-block" id="procesar-compra">Realizar compra</a>
                             </div>
-                        </div>
+                        </div> 
                     </form>
 
 

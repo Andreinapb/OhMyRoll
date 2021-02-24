@@ -6,7 +6,6 @@ const procesarPedidoBtn = $('#procesar-pedido');
 
 const carro = new Carrito();
 
-// const procesarPedidoBtn = document.getElementById('procesar-pedido');
 
 cargarEventos();
 
@@ -24,6 +23,10 @@ function cargarEventos() {
 
     procesarPedidoBtn.click(function (event) {
         carro.procesarPedido(event)
+    });
+ 
+    listaProductos.change(function (event) {
+        carro.obtenerEvento(event)
     });
 
     document.addEventListener('DOMContentLoaded', carro.leerLocalStorage());

@@ -1,28 +1,28 @@
 [{
     "id": 0,
     "imagen": "/../img/img3.jpg",
-    "nombre": "bandeja 1",
-    "cantidad": "4 rolls",
-    "precio": "$400"
+    "nombre": "Bandeja 1",
+    "cantidad": 4,
+    "precio": 400
   
 }, {
     "id": 1,
     "imagen": "../img/img14.jpg",
-    "nombre": "bandeja 2",
-    "cantidad": "6 rolls",
-    "precio": "$600"
+    "nombre": "Bandeja 2",
+    "cantidad": 6,
+    "precio": 600
   
 }, {
     "id": 2,
     "imagen": "../img/img15.jpg",
-    "nombre": "bandeja 3",
-    "cantidad": "8 rolls",
-    "precio": "$800"
+    "nombre": "Bandeja 3",
+    "cantidad": 8,
+    "precio": 800
 
 }, {
     "id": 3,
     "imagen": "../img/img7.jpg",
-    "nombre": "bandeja 4",
-    "cantidad": "12 rolls",
-    "precio": "$1200"
+    "nombre": "Bandeja 4",
+    "cantidad": 12,
+    "precio": 1200
 }]
