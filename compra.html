@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,104 +28,105 @@
 
 <body>
     <header>
-    <nav class="menu">
-        <a href="#nosotros">Nosotros</a>
-        <a href="carrito.html">Nuestros Productos</a>
-        <a href="#recomendaciones">Recomendaciones</a>
-        <a href="faq.html">Faq</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
+        <nav class="menu">
+            <a class="navbar-item navbar-link" href="index.html">Inicio</a>
+            <a class="navbar-item navbar-link" href="index.html#nosotros">Nosotros</a>
+            <a class="navbar-item navbar-link" href="index.html#recomendaciones">Recomendaciones</a>
+            <a class="navbar-item navbar-link" href="index.html#contacto">Contacto</a>
+        </nav>
 
-    <main>
-        <div class="container">
-            <div class="row mt-3">
-                <div class="col">
-                    <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
-                    <form id="procesar-pago" action="#" method="post">
-                        <div class="form-group row">
-                            <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
-                            <div class="col-12 col-md-10">
-                                <input type="text" class="form-control" id="cliente"
-                                    placeholder="Ingresa nombre cliente" name="destinatario" required >
+        <main>
+            <div class="container">
+                <div class="row mt-3">
+                    <div class="col">
+                        <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
+                        <form id="procesar-pago" action="#" method="post">
+                            <div class="form-group row">
+                                <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
+                                <div class="col-12 col-md-10">
+                                    <input type="text" class="form-control" id="cliente"
+                                        placeholder="Ingresa nombre cliente" name="destinatario" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
-                            <div class="col-12 col-md-10">
-                                <input type="text" class="form-control" id="correo" required placeholder="Ingresa tu correo" name="cc_to">
+                            <div class="form-group row">
+                                <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
+                                <div class="col-12 col-md-10">
+                                    <input type="text" class="form-control" id="correo" required
+                                        placeholder="Ingresa tu correo" name="cc_to">
+                                </div>
                             </div>
-                        </div>
 
-                        <div id="carrito" class="form-group table-responsive" >
-                            <table class="table" id="lista-compra" >
-                                <thead>
+                            <div id="carrito" class="form-group table-responsive">
+                                <table class="table" id="lista-compra">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Imagen</th>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">Precio</th>
+                                            <th scope="col">Cantidad</th>
+                                            <th scope="col">Sub Total</th>
+                                            <th scope="col">Eliminar</th>
+                                        </tr>
+
+                                    </thead>
+                                    <tbody>
+
+                                    </tbody>
                                     <tr>
-                                        <th scope="col">Imagen</th>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">Precio</th>
-                                        <th scope="col">Cantidad</th>
-                                        <th scope="col">Sub Total</th>
-                                        <th scope="col">Eliminar</th>
+                                        <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
+                                        <th scope="col">
+                                            <p id="subtotal"></p>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="4" scope="col" class="text-right">TOTAL :</th>
+                                        <th scope="col">
+                                            <input id="total" name="monto" class="font-weight-bold border-0" readonly
+                                                style="background-color: white;"></input>
+                                        </th>
                                     </tr>
 
-                                </thead>
-                                <tbody >
-
-                                </tbody>
-                                <tr>
-                                    <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
-                                    <th scope="col">
-                                        <p id="subtotal"></p>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th colspan="4" scope="col" class="text-right">TOTAL :</th>
-                                    <th scope="col">
-                                        <input id="total" name="monto" class="font-weight-bold border-0" readonly style="background-color: white;"></input>
-                                    </th>
-                                </tr>
-
-                            </table>
-                        </div>
-
-                        <div class="row justify-content-center" id="loaders">
-                            <img id="cargando" src="" width="220">
-                        </div>
-
-                        <div class="row justify-content-between">
-                            <div class="col-md-4 mb-2">
-                                <a href="carrito.html" class="btn btn-info btn-block">Seguir comprando</a>
+                                </table>
                             </div>
-                            <div class="col-xs-12 col-md-4">
-                                <a class="btn btn-success btn-block" id="procesar-compra">Realizar compra</a>
+
+                            <div class="row justify-content-center" id="loaders">
+                                <img id="cargando" src="" width="220">
                             </div>
-                        </div> 
-                    </form>
+
+                            <div class="row justify-content-between">
+                                <div class="col-md-4 mb-2">
+                                    <a href="carrito.html" class="btn btn-info btn-block">Seguir comprando</a>
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <a class="btn btn-success btn-block" id="procesar-compra">Realizar compra</a>
+                                </div>
+                            </div>
+                        </form>
+
+
+                    </div>
 
 
                 </div>
 
+            </div>
+        </main>
+
+        <footer>
+            <div class="row justify-content-center contacto" id="contacto">
+
+                <div class="col-12 col-md-9 text-center">
+                    <h2 class="subtitulo"><span>Contactanos</span></h2>
+                </div>
+
+                <div class="redes col-12 d-flex justify-content-center ">
+                    <a href="#" class="redes-text"><img src="img/instagram.png" alt="" class="icono">Instagram</a>
+                    <a href="#" class="redes-text"><img src="img/whatsapp.png" alt="" class="icono">whatsapp</a>
+                    <a href="#" class="redes-text"><img src="img/ayuda.png" alt="" class="icono">Faq</a>
+                </div>
 
             </div>
-
-        </div>
-    </main>
-
-    <footer>
-        <div class="row justify-content-center contacto" id="contacto">
-
-            <div class="col-12 col-md-9 text-center">
-                <h2 class="subtitulo"><span>Contactanos</span></h2>
-            </div>
-
-            <div class="redes col-12 d-flex justify-content-center ">
-                <a href="#" class="redes-text"><img src="img/instagram.png" alt="" class="icono">Instagram</a>
-                <a href="#" class="redes-text"><img src="img/whatsapp.png" alt="" class="icono">whatsapp</a>
-                <a href="#" class="redes-text"><img src="img/ayuda.png" alt="" class="icono">Faq</a>
-            </div>
-
-        </div>
-    </footer>
+        </footer>
 
 
 </body>
