@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,700i|Open+Sans:400,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/sweetalert2.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script defer src="js/catalogo.js"></script>
     <script defer src="js/carrito.js"></script>
@@ -29,15 +28,26 @@
 
 <body>
     <header>
-        <nav class="menu">
-            <a href="index.html#nosotros">Nosotros</a>
-            <a href="#recomendaciones">Recomendaciones</a>
-            <a href="faq.html">Faq</a>
-            <a href="#contacto">Contacto</a>
-            <button type="button" class="btn comprar" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                <i class="bi bi-basket"></i>
-                Ver Compra</button>
+     <nav class="navbar navbar-expand-lg navbar-light mr-auto">
+            <div class="container-fluid menu">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <a class="navbar-item navbar-link" href="index.html">Inicio</a>
+                        <a class="navbar-item navbar-link" href="index.html#nosotros">Nosotros</a>
+                        <a class="navbar-item navbar-link" href="index.html#recomendaciones">Recomendaciones</a>
+                        <a class="navbar-item navbar-link" href="faq.html">Faq</a>
+                        <a class="navbar-item navbar-link" href="index.html#contacto">Contacto</a>
+                    </div>
+              </div>
+              <button class="btn comprar" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <i class="bi bi-basket" style="font-size: 2rem; color:white ;height:150px; width: 150px;"></i></button>
 
+            </div>
+          </nav>
+            
     </header>
 
     <!-- Modal -->
@@ -53,9 +63,9 @@
                     <table id="lista-carrito" class="table">
                         <thead>
                             <tr>
-                                <th>Imagen</th>
-                                <th>Nombre</th>
-                                <th>Precio</th>
+                                <th class="titulo-carrito">Imagen</th>
+                                <th class="titulo-carrito">Nombre</th>
+                                <th class="titulo-carrito">Precio</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -63,9 +73,9 @@
                     </table>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" id="vaciar-carrito" class="btn btn-dark" data-bs-dismiss="modal">Vaciar
+                    <button type="button" id="vaciar-carrito" class="btn btn-carrito" data-bs-dismiss="modal">Vaciar
                         Carrito</button>
-                    <button type="button" id="procesar-pedido" class="btn btn-dark">Comprar
+                    <button type="button" id="procesar-pedido" class="btn btn-carritpo">Comprar
                     </button>
                 </div>
             </div>
@@ -86,8 +96,7 @@
 
         <footer>
             <div class="row justify-content-center contacto" id="contacto">
-
-                <div class="col-12 col-md-9 text-center">
+                <div class="col-12 col-md-12 text-center">
                     <h2 class="subtitulo"><span>Contactanos</span></h2>
                 </div>
 
@@ -96,7 +105,6 @@
                     <a href="#" class="redes-text"><img src="img/whatsapp.png" alt="" class="icono">whatsapp</a>
                     <a href="#" class="redes-text"><img src="img/ayuda.png" alt="" class="icono">Faq</a>
                 </div>
-
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"

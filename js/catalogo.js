@@ -10,13 +10,13 @@ function cargoTarjeta() {
             // localStorage.contenidoBandeja = JSON.stringify(contenidoBandeja)
             $.each(contenidoBandeja, function (i) {
                 tarjeta +=
-                    `<div class="card col-6 col-lg-3 tarjeta" style="width: 18rem;">
-                <img src="${contenidoBandeja[i].imagen}" class="card-img-top imagen" alt="..." >
+                    `<div class="card col-6 col-lg-3" id="tarjeta" style="width: 18rem;">
+                <img src="${contenidoBandeja[i].imagen}" class="card-img-top" id="imagen" alt="..." >
                 <div class="card-body" >
                 <h5 class="card-title"> ${contenidoBandeja[i].nombre}</h5>
-                <h4 class="card-title"> ${contenidoBandeja[i].nombre} <br>  ${contenidoBandeja[i].cantidad} Rolls + Frosting</h4>
+                <h4 class="card-title"><br>  ${contenidoBandeja[i].cantidad} Rolls + Frosting</h4>
                 <p class="card-text" type= "number"> ${contenidoBandeja[i].precio} </p>
-                <button class="btn btn-dark agregar-carrito" data-id="${contenidoBandeja[i].id}" ><i class=""></i>Agregar</button>
+                <button class="btn agregar-carrito"  id="agregar-carrito" data-id="${contenidoBandeja[i].id}">Agregar</button>
                  </div> 
                  </div>`
             })

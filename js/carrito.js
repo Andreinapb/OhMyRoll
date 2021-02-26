@@ -41,7 +41,7 @@ class Carrito {
             <td>${producto.titulo}</td>
             <td>${producto.precio}</td>
             <td>
-                <a href="#" class="borrar-producto" data-id="${producto.id}">x</a>
+                <a href="#" class="borrar-producto"style="color:coral; font-size:20px; text-decoration:none";" data-id="${producto.id}">x</a>
             </td>
         `;
         listaProductos.appendChild(row);
@@ -102,7 +102,7 @@ class Carrito {
                 <td>${producto.titulo}</td>
                 <td>${producto.precio}</td>
                 <td>
-                    <a href="#" class="borrar-producto" data-id="${producto.id}">x</a>
+                    <a href="#" class="borrar-producto" style="color:coral; font-size:40px ; text-decoration:none" data-id="${producto.id}">x</a>
                 </td>
             `;
             listaProductos.appendChild(row);
@@ -125,7 +125,7 @@ class Carrito {
                 </td>
                 <td id='subtotales'>${producto.precio * producto.cantidad}</td>
                 <td>
-                    <a href="#" class="borrar-producto" data-id="${producto.id}">x</a>
+                    <a href="#" class="borrar-producto" style="color:coral; font-size:30px ; text-decoration:none" data-id="${producto.id}">x</a>
                 </td>
             `;
             listaCompra.appendChild(row);
@@ -168,8 +168,8 @@ class Carrito {
 
         }  
         subtotal = parseFloat(total).toFixed(2);
-        document.getElementById('subtotal').innerHTML = "S/. " + subtotal;
-        document.getElementById('total').value = "S/. " + total.toFixed(2);
+        document.getElementById('subtotal').innerHTML = "$" + subtotal;
+        document.getElementById('total').value = "$" + total.toFixed(2);
     }
 
     obtenerEvento(e) {

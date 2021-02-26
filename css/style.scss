@@ -74,6 +74,7 @@ p {
 }
 
 .menu a {
+	
 	display: inline-block;
 	padding: 10px 30px;
 	font-size: 26px;
@@ -85,6 +86,7 @@ p {
 }
 
 .menu a:hover {
+	margin: 3px;
 	transform: translateY(18px);
 	background-color: $color3;
 }
@@ -201,18 +203,26 @@ p {
 
 .productos .btn-productos {
 	background-color: $color1;
-	color: $color6;
 	padding: 7px 20px;
-	text-transform: uppercase;
-	font-size: 16px;
 	border: 2px solid transparent;
 	transition: .3s ease;
+}
+
+.productos .btn-productos a {
+	text-decoration: none;
+	color: $color6;
+	text-transform: uppercase;
+	font-size: 16px;
 }
 
 .productos .btn-productos:hover {
 	background-color: transparent;
 	border: 2px solid $color1;
-	color: $color1;
+
+	a {
+		color: $color1;
+	}
+
 }
 
 /* ------------------------- */
@@ -293,7 +303,7 @@ p {
 }
 
 /* ------------------------- */
-/* Carrito */
+/* Carrito-catalogo */
 /* ------------------------- */
 
 .carrito {
@@ -315,23 +325,70 @@ p {
 	margin: 30px;
 }
 
-.tarjeta {
+#tarjeta {
 	height: 400px;
-	background-color:  $color1;;
+	background-color: $color7;
 	color: $color1;
 	text-align: center;
 	margin: 10px;
-	.imagen {
+
+	#imagen {
 		height: 50%;
 		width: 100%;
 	}
+}
+
+#agregar-carrito {
+	text-decoration: none;
+	background-color: $color1;
+	color: $color6;
+	text-transform: uppercase;
+	font-size: 16px;
   }
+  #agregar-carrito:hover{
+    opacity: 0.6;
+    text-decoration: none;
+  }
+
+  /* ------------------------- */
+/* Carrito-catalogo */
+/* ------------------------- */
+
+.modal-title {
+	color: $color1;
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+
+.titulo-carrito {
+	width: 70%;
+	font-size: 15px;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+	color: $color1;
+}
+
+.btn-carrito {
+	text-decoration: none;
+	background-color: $color1;
+	color: $color7;
+	font-size: 16px;
+  }
+ 
 
 /* ------------------------- */
 /* Mediaqueries */
 /* ------------------------- */
 
 @media (min-width: 320px) and (max-width: 667px) {
+
+	.menu a:hover {
+		background-color: $color3;
+	}
+	
 
 	.contenido-header .texto {
 		text-align: center;

@@ -10,7 +10,8 @@
     crema">
     <meta name="keywords" content="Rolls, canela, crema, comida, postre, domicilio">
     <title>OH MY ROLL</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,700i|Open+Sans:400,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -24,144 +25,156 @@
             </div>
         </div>
 
-    <nav class="menu">
-        <a href="#nosotros">Nosotros</a>
-        <a href="carrito.html">Nuestros Productos</a>
-        <a href="#recomendaciones">Recomendaciones</a>
-        <a href="faq.html">Faq</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-
-    <main class="container">
-        <div class="row nosotros justify-content-center" id="nosotros">
-            <div class="col-12 text-center">
-                <h2 class="subtitulo"><span>¿Quienes somos?</span></h2>
-                <h3 class="titulo">La vida con frosting es mejor.</h3>
-                <p>
-                    Emprendimiento de rolls de canela que con tienen capas de sabrosura, cremosidad y suavidad.
-                    Delicosos y 100% artesanales con los ingredientes de mejor calidad y sobre todo hechos con mucho
-                    amor.
-                </p>
-                <a href="#" class="enlace"> ¿Te gustaría probarlos?</a>
+        <nav class="navbar navbar-expand-lg navbar-light mr-auto">
+            <div class="container-fluid menu">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <a class="navbar-item navbar-link" href="#nosotros">Nosotros</a>
+                        <a class="navbar-item navbar-link" href="carrito.html">Nuestros Productos</a>
+                        <a class="navbar-item navbar-link" href="#recomendaciones">Recomendaciones</a>
+                        <a class="navbar-item navbar-link" href="faq.html">Faq</a>
+                        <a class="navbar-item navbar-link" href="#contacto">Contacto</a>
+                    </div>
+              </div>
             </div>
-        </div>
+          </nav>
 
-        <div class="row productos">
-            <article class="col-12 text-center">
-                <h2 class="subtitulo"><span>Nuestros productos</span></h2>
-                <p class="titulo">Un bocado nunca es suficiente</p>
-                <p>"Amaso y horneo con amor e ilusión de que a cada uno mis clientes les encante tanto como a mi"</p>
-            </article>
-
-            <div class="col-12">
-                <div class="row justify-content-center">
-                    <article class="col-6 col-lg-3 py-1">
-                        <figure class="producto">
-                            <img src="img/img3.jpg" class="img-fluid" alt="">
-                            <figcaption class="overlay">
-                                <p class="overlay-texto">Bandeja de 4 Rolls + frosting</p>
-                            </figcaption>
-                        </figure>
-                    </article>
-
-                    <article class="col-6 col-lg-3 py-1">
-                        <figure class="producto">
-                            <img src="img/img15.jpg" class="img-fluid" alt="">
-                            <figcaption class="overlay">
-                                <p class="overlay-texto">Bandeja de 6 rolls + frosting</p>
-                            </figcaption>
-                        </figure>
-                    </article>
-
-                    <article class="col-6 col-lg-3 py-1">
-                        <figure class="producto">
-                            <img src="img/img14.jpg" class="img-fluid" alt="">
-                            <figcaption class="overlay">
-                                <p class="overlay-texto">Bandeja de 8 rolls + frosting</p>
-                            </figcaption>
-                        </figure>
-                    </article>
-
-                    <article class="col-6 col-lg-3 py-1">
-                        <figure class="producto">
-                            <img src="img/img8.jpg" class="img-fluid" alt="">
-                            <figcaption class="overlay">
-                                <p class="overlay-texto">Bandeja de 12 rolls + frosting</p>
-                            </figcaption>
-                        </figure>
-                    </article>
-
-                    <button class="d-block btn-productos"><a href="carrito.html">Pide los tuyos aquí</a></button>
+        <main class="container">
+            <div class="row nosotros justify-content-center" id="nosotros">
+                <div class="col-12 text-center">
+                    <h2 class="subtitulo"><span>¿Quienes somos?</span></h2>
+                    <h3 class="titulo">La vida con frosting es mejor.</h3>
+                    <p>
+                        Emprendimiento de rolls de canela que con tienen capas de sabrosura, cremosidad y suavidad.
+                        Delicosos y 100% artesanales con los ingredientes de mejor calidad y sobre todo hechos con mucho
+                        amor.
+                    </p>
+                    <a href="#" class="enlace"> ¿Te gustaría probarlos?</a>
                 </div>
             </div>
-        </div>
-    </main>
 
-    <div class="separador text-center text-white">
-        <p><q>En esta pequeña cocina esta creciendo un gran sueño</q></p>
-    </div>
+            <div class="row productos">
+                <article class="col-12 text-center">
+                    <h2 class="subtitulo"><span>Nuestros productos</span></h2>
+                    <p class="titulo">Un bocado nunca es suficiente</p>
+                    <p>"Amaso y horneo con amor e ilusión de que a cada uno mis clientes les encante tanto como a mi"
+                    </p>
+                </article>
 
-    <div class="container" id="recomendaciones">
-        <div class="row recomendaciones d-flex justify-content-around">
-            <article class="col-10 col-sm-3">
-                <figure class="text-center">
-                    <img class="icono" src="img/tiempo.png" alt="">
-                    <figcaption>
-                        <p>
-                            <strong class="mb-2 titulo-recomendacion">Tibio es mas rico</strong>
-                            <div class="w-100">Caliéntalos 15 segundos en el micro</div>
-                        </p>
-                    </figcaption>
-                </figure>
-            </article>
+                <div class="col-12">
+                    <div class="row justify-content-center">
+                        <article class="col-6 col-lg-3 py-1">
+                            <figure class="producto">
+                                <img src="img/img3.jpg" class="img-fluid" alt="">
+                                <figcaption class="overlay">
+                                    <p class="overlay-texto">Bandeja de 4 Rolls + frosting</p>
+                                </figcaption>
+                            </figure>
+                        </article>
 
-            <article class="col-10 col-sm-3">
-                <figure class="text-center">
-                    <img class="icono" src="img/exclamacion.png" alt="">
-                    <figcaption>
-                        <p>
-                            <strong class="mb-2 titulo-recomendacion">Disfrutálos como te gusten</strong>
-                            <div class="w-100"></div>
-                            Si no te gustan tan dulces, te recomiendo no ponerle el frosting
-                        </p>
-                    </figcaption>
-                </figure>
-            </article>
+                        <article class="col-6 col-lg-3 py-1">
+                            <figure class="producto">
+                                <img src="img/img15.jpg" class="img-fluid" alt="">
+                                <figcaption class="overlay">
+                                    <p class="overlay-texto">Bandeja de 6 rolls + frosting</p>
+                                </figcaption>
+                            </figure>
+                        </article>
 
-            <article class="col-10 col-sm-3">
-                <figure class="text-center">
-                    <img class="icono" src="img/regalo.png" alt="">
-                    <figcaption>
-                        <p>
-                            <strong class="mb-2 titulo-recomendacion">Te tengo un regalo</strong>
-                            <div class="w-100"></div>
-                            Por cada amigo que refieras, te llevarás una bandeja de 8 rolls por el precio de la de 6
-                            rolls
-                        </p>
-                    </figcaption>
-                </figure>
-            </article>
-        </div>
-    </div>
+                        <article class="col-6 col-lg-3 py-1">
+                            <figure class="producto">
+                                <img src="img/img14.jpg" class="img-fluid" alt="">
+                                <figcaption class="overlay">
+                                    <p class="overlay-texto">Bandeja de 8 rolls + frosting</p>
+                                </figcaption>
+                            </figure>
+                        </article>
 
-
-    <footer>
-        <div class="row justify-content-center contacto" id="contacto">
-
-            <div class="col-12 col-md-9 text-center">
-                <h2 class="subtitulo"><span>Contactanos</span></h2>
+                        <article class="col-6 col-lg-3 py-1">
+                            <figure class="producto">
+                                <img src="img/img8.jpg" class="img-fluid" alt="">
+                                <figcaption class="overlay">
+                                    <p class="overlay-texto">Bandeja de 12 rolls + frosting</p>
+                                </figcaption>
+                            </figure>
+                        </article>
+                        <button class="btn-productos btn"><a href="carrito.html">Pide los tuyos aquí</a></button>
+                    </div>
+                </div>
             </div>
+        </main>
 
-            <div class="redes col-12 d-flex justify-content-center ">
-                <a href="#" class="redes-text"><img src="img/instagram.png" alt="" class="icono">Instagram</a>
-                <a href="#" class="redes-text"><img src="img/whatsapp.png" alt="" class="icono">whatsapp</a>
-                <a href="#" class="redes-text"><img src="img/ayuda.png" alt="" class="icono">Faq</a>
-            </div>
-
+        <div class="separador text-center text-white">
+            <p><q>En esta pequeña cocina esta creciendo un gran sueño</q></p>
         </div>
-    </footer>
 
-    <script src="js/efectos.js"></script>
+        <div class="container" id="recomendaciones">
+            <div class="row recomendaciones d-flex justify-content-around">
+                <article class="col-10 col-sm-3">
+                    <figure class="text-center">
+                        <img class="icono" src="img/tiempo.png" alt="">
+                        <figcaption>
+                            <p>
+                                <strong class="mb-2 titulo-recomendacion">Tibio es mas rico</strong>
+                                <div class="w-100">Caliéntalos 15 segundos en el micro</div>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="col-10 col-sm-3">
+                    <figure class="text-center">
+                        <img class="icono" src="img/exclamacion.png" alt="">
+                        <figcaption>
+                            <p>
+                                <strong class="mb-2 titulo-recomendacion">Disfrutálos como te gusten</strong>
+                                <div class="w-100"></div>
+                                Si no te gustan tan dulces, te recomiendo no ponerle el frosting
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="col-10 col-sm-3">
+                    <figure class="text-center">
+                        <img class="icono" src="img/regalo.png" alt="">
+                        <figcaption>
+                            <p>
+                                <strong class="mb-2 titulo-recomendacion">Te tengo un regalo</strong>
+                                <div class="w-100"></div>
+                                Por cada amigo que refieras, te llevarás una bandeja de 8 rolls por el precio de la de 6
+                                rolls
+                            </p>
+                        </figcaption>
+                    </figure>
+                </article>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="row justify-content-center contacto" id="contacto">
+
+                <div class="col-12 col-md-9 text-center">
+                    <h2 class="subtitulo"><span>Contactanos</span></h2>
+                </div>
+
+                <div class="redes col-12 d-flex justify-content-center ">
+                    <a href="#" class="redes-text"><img src="img/instagram.png" alt="" class="icono">Instagram</a>
+                    <a href="#" class="redes-text"><img src="img/whatsapp.png" alt="" class="icono">whatsapp</a>
+                    <a href="#" class="redes-text"><img src="img/ayuda.png" alt="" class="icono">Faq</a>
+                </div>
+
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+        </script>
+        <script src="js/efectos.js"></script>
+
 </body>
 
 </html>

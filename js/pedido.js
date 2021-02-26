@@ -29,5 +29,5 @@ function cargarEventos() {
         carro.obtenerEvento(event)
     });
 
-    document.addEventListener('DOMContentLoaded', carro.leerLocalStorage());
+    window.loaded(carro.leerLocalStorage());
 }
